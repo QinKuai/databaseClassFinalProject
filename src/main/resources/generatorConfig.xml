@@ -50,18 +50,18 @@
         </javaTypeResolver>
 
         <!-- 生成实体类地址 -->
-        <javaModelGenerator targetPackage="databaseclass.finalproject.entity" targetProject="src/main/java" >
+        <javaModelGenerator targetPackage="databaseclass.finalproject.entity" targetProject="${mybatis.project}" >
             <property name="enableSubPackages" value="false"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         
         <!-- 生成mapxml文件 -->
-        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources" >
+        <sqlMapGenerator targetPackage="mapper" targetProject="${mybatis.resources}" >
             <property name="enableSubPackages" value="false" />
         </sqlMapGenerator>
         
         <!-- 生成mapxml对应client，也就是接口dao -->
-        <javaClientGenerator targetPackage="databaseclass.finalproject.dao" targetProject="src/main/java" type="XMLMAPPER" >
+        <javaClientGenerator targetPackage="databaseclass.finalproject.dao" targetProject="${mybatis.project}" type="XMLMAPPER" >
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
         
