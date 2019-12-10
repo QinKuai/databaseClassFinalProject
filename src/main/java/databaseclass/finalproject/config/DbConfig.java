@@ -1,4 +1,4 @@
-package databaseclass.finalproject.configs;
+package databaseclass.finalproject.config;
 
 import javax.sql.DataSource;
 
@@ -11,6 +11,13 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * @author QinKuai
+ * 创建时间：2019年12月11日
+ * 描述：
+ * 数据库配置信息
+ * 同时满足Mybatis的Mapper映射关系
+ */
 @Configuration
 @MapperScan({"databaseclass.finalproject.dao"})
 public class DbConfig {
@@ -26,11 +33,19 @@ public class DbConfig {
 	@Value("${spring.datasource.driver-class-name}")
 	private String datasource_driver;
 	
+	/**
+	 * 描述：
+	 * 配置数据源
+	 */
 	@Bean
 	public DataSource dataSource() {
 		return new PooledDataSource(datasource_driver, datasource_url, datasource_username, datasource_password);
 	}
 	
+	/**
+	 * 描述：
+	 * 配置Mybatis的数据源和Mapper映射路径
+	 */
 	@Bean
 	public SqlSessionFactory sqlSessionFactory() throws Exception{
 		SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();

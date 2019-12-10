@@ -20,10 +20,11 @@
         	alert("test")
             $('#request').click(function() {
             	alert("QinKuai")
-                $.get('user/1', {}, function(data, status) {
+                $.get('user/QinKuai', {}, function(data, status) {
                     var data_binding = document.getElementById('data_binding');
 
                     data_binding.innerText = data;
+                    window.location.href = "home";
                 })
             })
         })

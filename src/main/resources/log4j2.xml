@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG" monitorInterval="1800">
+ 
+ 
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%-5p] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t]%n msg:%m%n" />
+        </Console>
+ 
+        <RollingFile name="RunningLog" fileName="/WEB-INF/classes/log/log.txt"
+            filePattern="${LOG_HOME}/$${date:yyyy-MM}/%d{yyyy-MM-dd}-%i.log"
+            immediateFlush="true">
+            <PatternLayout
+                pattern="[%-5p] %d{yyyy-MM-dd HH:mm:ss} [%file:%line] - %m%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="20" />
+        </RollingFile>
+    </Appenders>
+    
+    <Loggers>
+        <Root level="info">
+               <!-- 这里是输入到文件，很重要-->
+            <AppenderRef ref="RunningLog" />
+            <!-- 这里是输入到控制台-->
+            <AppenderRef ref="Console" />
+        </Root>
+    </Loggers>
+</Configuration>

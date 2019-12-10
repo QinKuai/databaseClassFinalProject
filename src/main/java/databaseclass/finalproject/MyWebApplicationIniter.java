@@ -2,8 +2,8 @@ package databaseclass.finalproject;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import databaseclass.finalproject.configs.RootConfig;
-import databaseclass.finalproject.configs.WebConfig;
+import databaseclass.finalproject.config.RootConfig;
+import databaseclass.finalproject.config.WebConfig;
 
 public class MyWebApplicationIniter extends AbstractAnnotationConfigDispatcherServletInitializer{
 	@Override
