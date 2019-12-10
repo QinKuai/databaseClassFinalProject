@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Binding Test</title>
+    <!--<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
+    <script src="static/js/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <h1>Test Data Binding</h1>
+    <b id="data_binding"></b>
+    <button id="request">获取数据</button>
+    <script>
+    	alert('Qinkuai222')
+        $('document').ready(function() {
+        	alert("test")
+            $('#request').click(function() {
+            	alert("QinKuai")
+                $.get('user/1', {}, function(data, status) {
+                    var data_binding = document.getElementById('data_binding');
+
+                    data_binding.innerText = data;
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

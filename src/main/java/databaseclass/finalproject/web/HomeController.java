@@ -2,9 +2,9 @@ package databaseclass.finalproject.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.fastjson.JSONObject;
@@ -20,7 +20,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String root() {
-		return "home";
+		return "test";
 	}
 	
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
@@ -28,12 +28,18 @@ public class HomeController {
 		return "home";
 	}
 	
-	@RequestMapping(value = "/qinkuai",method = RequestMethod.GET)
+	
+	
+	@RequestMapping(value = "/user/{userid}",method = RequestMethod.GET)
 	@ResponseBody
-	public String qinkuai() {
+	public String getUser(@PathVariable("userid") int userid) {
 		JSONObject json = new JSONObject();
-		json.put("qinkuai", "qinkuai");
-		
+		if (userid == 0) {
+			json.put("qinkuai", "qinkuai");
+		}else {
+			json.put("qinkuai2", "qinkuai2");
+		}
+		System.out.println(json.toString());
 		return json.toJSONString();
 	}
 	
