@@ -5,7 +5,6 @@ import java.util.Date;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Null;
-import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 
 /**
@@ -378,7 +377,7 @@ public class User implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", username=").append(username);
-        sb.append(", uPassword=").append(uPassword);
+        sb.append(", password=").append(uPassword);
         sb.append(", uSex=").append(uSex);
         sb.append(", uBirthday=").append(uBirthday);
         sb.append(", uRegistertime=").append(uRegistertime);

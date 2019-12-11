@@ -1,5 +1,7 @@
 package databaseclass.finalproject.web;
 
+import java.util.Calendar;
+
 import javax.validation.Valid;
 
 import org.apache.logging.log4j.LogManager;
@@ -16,52 +18,49 @@ import com.alibaba.fastjson.JSONObject;
 import databaseclass.finalproject.dao.UserMapper;
 import databaseclass.finalproject.entity.User;
 import databaseclass.finalproject.value.ResponseCode;
+import databaseclass.finalproject.value.UserType;
 
-/**
- * @author QinKuai
- * 创建时间：2019年12月10日
- * 描述：
- * 负责登录页面的跳转
- * 以及登录校验
- */
 @Controller
-public class LoginController {
+public class RegisterController {
 	@Autowired
 	private UserMapper userDao;
 	
 	private static Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 	
+	
 	/**
 	 * 描述：
-	 * 跳转到登录界面
+	 * 注册界面跳转
 	 */
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String login() {
-		return "login";
+	@RequestMapping(value = "/register", method = RequestMethod.GET)
+	public String register() {
+		return "register";
 	}
 	
 	/**
 	 * 描述：
-	 * 校验用户的登录
+	 * 用户注册信息校验
 	 */
-	@RequestMapping(value = "/login/check", method = RequestMethod.GET)
+	@RequestMapping(value = "/register/check", method = RequestMethod.GET)
 	@ResponseBody
-	public String loginCheck(String username, String password) {
+	public String reigsterCheck(@Valid User user, Errors errors) {
 		JSONObject json = new JSONObject();
 		
-		System.out.println(username);
-		System.out.println(password);
-		User user = userDao.selectByUsername(username);
-		
-		System.out.println(user);
-		
-		if (user == null || !user.getuPassword().equals(password)) {
+		// 用户注册出现错误
+		if (errors.hasErrors()) {
 			json.put(ResponseCode.KEY, ResponseCode.ERROR);
 			return json.toJSONString();
 		}
 		
+		//获取用户注册时间
+		user.setuRegistertime(Calendar.getInstance().getTime());
+		//设置用户类型
+		user.setuType(UserType.NORMAL);
+		
+		userDao.insert(user);
+		logger.info("Register Suceess! user:{}", user);
+		
 		json.put(ResponseCode.KEY, ResponseCode.OK);
-		logger.info("User Login!username:{}", user.getUsername());
 		return json.toJSONString();
 	}
 }

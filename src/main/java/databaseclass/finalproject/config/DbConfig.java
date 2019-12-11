@@ -7,9 +7,10 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
+//import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 /**
  * @author QinKuai
@@ -50,6 +51,7 @@ public class DbConfig {
 	public SqlSessionFactory sqlSessionFactory() throws Exception{
 		SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
 		sessionFactory.setDataSource(dataSource());
+		//通过XML配置Mapper时使用
 		PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
 		sessionFactory.setMapperLocations(resolver.getResources("classpath:/mapper/*Mapper.xml"));
 		return sessionFactory.getObject();

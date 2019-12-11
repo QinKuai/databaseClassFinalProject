@@ -11,7 +11,7 @@ package databaseclass.finalproject.value;
  */
 public class UserType {
 	//普通用户
-	public final static String NORMAL = "f";
+	public final static String NORMAL = "n";
 	// VIP用户
 	public final static String VIP = "v";
 	//管理员用户
