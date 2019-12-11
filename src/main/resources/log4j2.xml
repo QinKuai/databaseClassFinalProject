@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="DEBUG" monitorInterval="1800">
- 
- 
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="[%-5p] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t]%n msg:%m%n" />
         </Console>
  
-        <RollingFile name="RunningLog" fileName="/WEB-INF/classes/log/log.txt"
-            filePattern="${LOG_HOME}/$${date:yyyy-MM}/%d{yyyy-MM-dd}-%i.log"
+        <RollingFile name="RunningLog" fileName="${web:rootDir}/WEB-INF/classes/log/daily.log"
+            filePattern="$${date:yyyy-MM}/%d{yyyy-MM-dd}-%i.log"
             immediateFlush="true">
             <PatternLayout
                 pattern="[%-5p] %d{yyyy-MM-dd HH:mm:ss} [%file:%line] - %m%n" />
