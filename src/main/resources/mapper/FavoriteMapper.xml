@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="databaseclass.finalproject.dao.FavoriteMapper">
+  <resultMap id="BaseResultMap" type="databaseclass.finalproject.entity.Favorite">
+    <id column="username" jdbcType="VARCHAR" property="username" />
+    <id column="resourceid" jdbcType="INTEGER" property="resourceid" />
+    <result column="favo_date" jdbcType="DATE" property="favoDate" />
+    <result column="cancel_date" jdbcType="DATE" property="cancelDate" />
+  </resultMap>
+  
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from favorite
+    where username = #{username,jdbcType=VARCHAR}
+      and resourceid = #{resourceid,jdbcType=INTEGER}
+  </delete>
+  
+  <insert id="insert" parameterType="databaseclass.finalproject.entity.Favorite">
+    insert into favorite (username, resourceid, favo_date, cancel_date
+      )
+    values (#{username, jdbcType=VARCHAR}, #{resourceid,jdbcType=INTEGER}, #{favoDate,jdbcType=DATE}, #{cancelDate,jdbcType=DATE}
+      )
+  </insert>
+  
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select username, resourceid, favo_date, cancel_date
+    from favorite
+    where username = #{username,jdbcType=VARCHAR}
+      and resourceid = #{resourceid,jdbcType=INTEGER}
+  </select>
+  
+  <select id="selectAll" resultMap="BaseResultMap">
+    select username, resourceid, favo_date, cancel_date
+    from favorite
+  </select>
+  
+  <select id="selectByUsername" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	select username, resourceid, favo_date, cancel_date
+    from favorite where username=#{username, jdbcType=VARCHAR}
+  </select>
+  
+</mapper>

@@ -14,4 +14,6 @@ public class UserSex {
 	public static final String MALE = "m";
 	// 女性
 	public static final String FEMALE = "f";
+	// 
+	public static final String UNKNOWN = "n";
 }

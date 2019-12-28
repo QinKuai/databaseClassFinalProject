@@ -7,6 +7,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Null;
 import javax.validation.constraints.Size;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 /**
  * @author QinKuai
  * 创建时间：2019年12月11日
@@ -24,6 +26,7 @@ public class User implements Serializable {
      */
 	@NotNull
 	@Size(min = 1, max = 20)
+	@JSONField
     private String username;
 
     /**
@@ -35,6 +38,7 @@ public class User implements Serializable {
      */
 	@NotNull
 	@Size(min = 6, max = 16)
+	@JSONField(serialize = false)
     private String uPassword;
 
     /**
@@ -44,7 +48,7 @@ public class User implements Serializable {
      *
      * @mbg.generated
      */
-	@NotNull
+	@JSONField(name = "sex")
     private String uSex;
 
     /**
@@ -54,6 +58,7 @@ public class User implements Serializable {
      *
      * @mbg.generated
      */
+	@JSONField(name = "birthday")
     private Date uBirthday;
 
     /**
@@ -64,6 +69,7 @@ public class User implements Serializable {
      * @mbg.generated
      */
     @Null
+    @JSONField(serialize = false)
     private Date uRegistertime;
 
     /**
@@ -74,6 +80,7 @@ public class User implements Serializable {
      * @mbg.generated
      */
     @NotNull
+    @JSONField(name = "email")
     private String uEmail;
 
     /**
@@ -84,6 +91,7 @@ public class User implements Serializable {
      * @mbg.generated
      */
     @Null
+    @JSONField(name = "rank")
     private Short uRank;
 
     /**
@@ -94,6 +102,7 @@ public class User implements Serializable {
      * @mbg.generated
      */
     @Null
+    @JSONField(name = "type")
     private String uType;
 
     /**
@@ -104,6 +113,7 @@ public class User implements Serializable {
      * @mbg.generated
      */
     @Null
+    @JSONField(name = "exp")
     private Integer uExp;
 
     /**
@@ -114,6 +124,7 @@ public class User implements Serializable {
      * @mbg.generated
      */
     @Null
+    @JSONField(name = "point")
     private Integer uPoint;
 
     /**

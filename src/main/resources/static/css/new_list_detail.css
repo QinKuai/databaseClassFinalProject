@@ -1,0 +1,261 @@
+.__Person__Header__Info{
+	overflow: hidden;
+	background-color: #FFFFFF;
+	margin-top: 70px;
+}
+.__Header__Info{
+	width: 1160px;
+	margin: 0 auto;
+	padding: 30px 0;
+	overflow: hidden;
+}
+.__Left__Info_{
+	float: left;
+	overflow: hidden;
+}
+.__Left__Info_ h3{
+	display: block;
+	color: #222222;
+	font-size: 18px;
+	overflow: hidden;
+}
+.__Left__Info_ h3 span{
+	float: left;
+}
+.__Left__Info_ h3 span.isOriginal{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	overflow: hidden;
+	margin-left: 5px;
+}
+.__Left__Info_ h3 span img{
+	width: 100%;
+}
+.__Left__Info_ .__Tag__{
+	padding-top: 16px;
+}
+.__Left__Info_ .__Tag__ h5{
+	display: inline-block;
+	font-size: 14px;
+}
+.__Left__Info_ .__Tag__ span{
+	display: inline-block;
+	color: #888888;
+	font-size: 14px;
+}
+.__Right__Info_{
+	float: right;
+}
+
+.__Info_Tools{
+	display: flex;
+	max-width: 240px;
+	justify-content: space-between;
+	padding-top: 16px;
+}
+.__Info_Tools .__Tools{
+	font-size: 12px;
+	color: #888888;
+}
+.__Info_Tools .__Tools span{
+	margin-left: 6px;
+}
+
+.__List__Footer{
+	display: block;
+	overflow: hidden;
+}
+.__List__Footer >a{
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+}
+.__Download_Btn{
+	width: 100%;
+	background-color: #2D8BFF;
+	color: #FFFFFF;
+	padding: 12px 0;
+	text-align: center;
+	font-size: 14px;
+  border-radius: 3px;
+  margin-top: 12px;
+  transition: all .5s ease-in-out;
+}
+.__Download_Btn:hover{
+	background-color: #287be2;
+	color: #ffffff;
+	text-decoration: none;
+}
+.__Download_Btn:focus,.__Download_Btn:visited{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.__Header__Name{
+	display: inline-block;
+	margin-left: 8px;
+}
+.__Header__Name span{
+	display: block;
+	font-size: 16px;
+}
+.__Header__Name small{
+	display: block;
+	font-size: 12px;
+	color: #888888;
+}
+.__Focus{
+	float: right;
+	background-color: #E7F4FD;
+	border-radius: 3px;
+	border: 1px solid #2D8BFF;
+	padding: 5px 14px;
+	margin-top: 6px;
+	font-size: 12px;
+	color: #2D8BFF;
+	cursor: pointer;
+}
+.__List__Footer .__Header__Images{
+	float: left;
+	width: 42px;
+	height: 42px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.__List__Footer .__Header__Images img{
+	width: 100%;
+}
+
+/**image**/
+.__Image__Info{
+	overflow: hidden;
+}
+.__Image__Image_{
+	width: 1160px;
+	overflow: hidden;
+	margin: 10px auto;
+	padding: 40px 0;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+.__Image__Image_ img{
+	width: 100%;
+}
+.__Image__Infos_{
+	overflow: hidden;
+	background-color: #FFFFFF;
+}
+.__Image__s{
+	width: 1160px;
+	overflow: hidden;
+	margin: 30px auto;
+}
+.__Image__Text{
+	font-size: 16px;
+	color: #555555;
+	margin-bottom: 30px;
+}
+.__Image__Button{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+.__Image__Button a.Btn_Colls{
+	float: right;
+	background-color: #2D8BFF;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 10px 40px;
+	margin-left: 20px;
+}
+
+.__Download__Others{
+	overflow: hidden;
+	margin-top: 40px;
+}
+.__Download__Others >span{
+	font-size: 16px;
+	display: block;
+	padding: 20px 0;
+}
+.__Download__Others .__Other__ .__List__Footer{
+	padding: 14px 12px;
+}
+.__Download__Others .__Header__Name{
+	line-height: 42px;
+}
+
+
+/**__Download_Header**/
+.__Download_Header{
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0;
+	background-color: #FFFFFF;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+	padding: 12px 0;
+	top: -80px;
+	opacity: 0;
+	transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	z-index: 999999;
+}
+.__Change__Header .__Download_Header{
+	top: 0;
+	opacity: 1;
+}
+.__Change__Header .__Header{
+	display: none;
+}
+.__Download_Header .__Header__Container_{
+	width: 1160px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.__Header__Container_ >a{
+	float: left;
+	overflow: hidden;
+}
+.__Header__Container_ .__Header__Images{
+	float: left;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.__Header__Container_ .__Header__Images img{
+	width: 100%;
+}
+.__Header__Container_ .__Header__Name{
+	float: left;
+	font-size: 14px;
+	color: #222222;
+	line-height: 40px;
+	margin-left: 6px;
+}
+.__Btn__Groups_{
+	float: right;
+	overflow: hidden;
+}
+.__Btn__Groups_ >a{
+	display: inline-block;
+	background-color: #2D8BFF;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 40px;
+    margin-left: 20px;
+}
+.__Download_Button{
+	background-color: #FFFFFF !important;
+	border: 1px solid #2D8BFF;
+	color: #2D8BFF !important;
+}
+.__List__Info__Sigle{
+	border: 1px solid #eaeaea;
+	box-sizing: border-box;
+}

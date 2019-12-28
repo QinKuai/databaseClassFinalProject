@@ -1,0 +1,117 @@
+.__Works__Con{
+  background-color: transparent;
+  box-shadow: none;
+  padding: 10px 0;
+}
+.__Works__Con .__All__List{
+  display: none;
+  overflow: hidden;
+  padding-bottom: 10px; 
+}
+.__Works__Con .__All__List >span{
+  display: inline-block;
+  font-size: 14px;
+  color: #222222;
+}
+.__Works__Con ul li{
+  display: inline-block;
+  width: 296px;
+  overflow: hidden;
+  position: relative;
+  margin: 10px 5px;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+}
+.__Works__Con ul li:hover{
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.__Works__Con ul li >a{
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #D8D8D8;
+}
+.__Works__Con ul li >a:hover{
+  text-decoration: none;
+}
+.__Works__Con ul li >a:hover .__List__Img img{
+  transform: scale(1.1,1.1);
+}
+.__Works__Con ul li .__List__Img{
+  width: 276px;
+  height: 230px;
+  margin: 10px;
+  overflow: hidden;
+}
+.__Works__Con ul li .__List__Img img{
+  position: relative;
+  width: 100%;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+}
+
+.__List__Footer{
+  padding: 14px 12px;
+}
+.__Header__Name{
+  line-height: 42px;
+  display: inline-block;
+  margin-left: 8px;
+}
+.__List__Footer .__Header__Images{
+  float: left;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.__List__Footer .__Header__Images img{
+  width: 100%;
+}
+.__Info_Tools{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+.__Info_Tools .__Tools{
+  font-size: 12px;
+  color: #888888;
+}
+.__Info_Tools .__Tools span{
+  margin-left: 6px;
+}
+
+.__List__Footer{
+  display: block;
+  overflow: hidden;
+}
+.__List__Footer >a{
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/**下载列表**/
+.__Integral__{
+  float: right;
+  margin-top: 3px
+}
+.__Integral__ span{
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  color: #656565
+}
+.__Integral__ span em{
+  color: #ff5d5d;
+  font-style: initial;
+}
+.__Integral__ span small{
+  color: #3e93f7;
+}
+

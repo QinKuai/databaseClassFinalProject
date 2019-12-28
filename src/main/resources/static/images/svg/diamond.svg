@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="37px" viewBox="0 0 46 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>钻石</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="钻石" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero" id="Shape">
+            <polygon fill="#FEC91A" points="36.7734016 7.93083242 41.7148033 2.34358638 36.7734016 0.00222388489 30.152861 2.34358638"></polygon>
+            <polygon fill="#FFC000" points="36.7734016 0.00222388489 23 0.00222388489 30.152861 2.34358638"></polygon>
+            <polygon fill="#FFD300" points="23.0265454 7.93083242 30.152861 2.34358638 23 0.00222388489 15.847139 2.34358638"></polygon>
+            <polygon fill="#F5B423" points="45.9696952 7.93083242 36.7734016 7.93083242 41.7148033 2.34358638"></polygon>
+            <polygon fill="#FEC91A" points="9.20908969 7.93083242 15.847139 2.34358638 9.20908969 0.00222388489 4.28519674 2.34358638"></polygon>
+            <polyline fill="#F5B423" points="0.0303048441 7.93083242 4.28519674 2.34358638 9.20908969 7.93083242 0.0303048441 7.93083242"></polyline>
+            <polygon fill="#FFC000" points="9.20908969 0.00222388489 23 0.00222388489 15.847139 2.34358638"></polygon>
+            <polygon fill="#FFD007" points="9.20908969 7.93083242 14.0663367 7.93083242 15.847139 2.34358638"></polygon>
+            <polygon fill="#FCDC55" points="15.847139 2.34358638 14.0663367 7.93083242 23.0265454 7.93083242"></polygon>
+            <polygon fill="#FCDC55" points="23.0265454 7.93083242 31.9401585 7.93083242 30.152861 2.34358638"></polygon>
+            <polygon fill="#FFD007" points="30.152861 2.34358638 31.9401585 7.93083242 36.7734016 7.93083242"></polygon>
+            <polygon fill="#FFCE00" points="45.9696952 7.93083242 36.7734016 7.93083242 26.9795538 28.4572194"></polygon>
+            <polygon fill="#F5B423" points="26.9795538 28.4572194 23 36.7978467 45.9696952 7.93083242"></polygon>
+            <polygon fill="#FFCE00" points="19.0150807 28.4572194 9.20908969 7.93083242 0.0303048441 7.93083242"></polygon>
+            <polygon fill="#F5B423" points="19.0150807 28.4572194 0.0303048441 7.93083242 23 36.7978467"></polygon>
+            <polygon fill="#FCDC55" points="26.9795538 28.4572194 36.7734016 7.93083242 31.9401585 7.93083242"></polygon>
+            <polygon fill="#FCDC55" points="19.0150807 28.4572194 9.20908969 7.93083242 14.0598415 7.93083242"></polygon>
+            <polygon fill="#FFE269" points="26.9795538 28.4572194 23.0265454 7.93083242 19.0150807 28.4572194 23 36.7978467"></polygon>
+            <polygon fill="#FFDD4E" points="31.9401585 7.93083242 23.0265454 7.93083242 26.9795538 28.4572194"></polygon>
+            <polygon fill="#FFDD4E" points="14.0598415 7.93083242 23.0265454 7.93083242 19.0204462 28.4572194"></polygon>
+        </g>
+    </g>
+</svg>

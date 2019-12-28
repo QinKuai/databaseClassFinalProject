@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="original" transform="translate(2.000000, 0.000000)">
+            <g id="盾牌" fill-rule="nonzero">
+                <path d="M12.8571429,29.3844672 L12.8571429,0 L13.1761701,0.217005129 C16.6923312,2.61063746 20.7264827,4.1033697 25.0728007,4.28420731 L25.7142857,4.28420731 L25.7142857,14.0823177 C25.7142857,21.309246 20.4897851,27.7010335 13.0080805,29.3614515 L12.8845861,29.3877551 L12.8571429,29.3844672 Z" id="Shape" fill="#41BA37"></path>
+                <path d="M12.8571429,29.3844672 L12.8571429,0 L12.5381156,0.217005129 C9.01852416,2.61063746 4.98437262,4.1033697 0.641484983,4.28420731 L0,4.28420731 L0,14.0823177 C0,21.309246 5.22450069,27.7010335 12.7062053,29.3614515 L12.8296996,29.3877551 L12.8571429,29.3844672 Z" id="Shape" fill="#128D07"></path>
+            </g>
+            <g id="Group" transform="translate(3.214286, 7.500000)" fill="#FFFFFF" font-family="PingFangSC-Regular, PingFang SC" font-size="9" font-weight="normal">
+                <text id="原创">
+                    <tspan x="0" y="10.4642857">原创</tspan>
+                </text>
+                <text id="原创">
+                    <tspan x="0" y="10.4642857">原创</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

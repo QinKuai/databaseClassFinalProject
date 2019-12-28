@@ -1,12 +1,19 @@
 package databaseclass.finalproject.config;
 
+import java.nio.charset.Charset;
+import java.util.List;
+
 import org.apache.logging.log4j.web.Log4jServletContextListener;
 import org.apache.logging.log4j.web.Log4jServletFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.validation.Validator;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
+import org.springframework.web.multipart.MultipartResolver;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -36,10 +43,17 @@ public class WebConfig implements WebMvcConfigurer{
 	@Bean
 	public ViewResolver viewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-		resolver.setPrefix("WEB-INF/classes/views/");
+		resolver.setPrefix("WEB-INF/classes/view/");
 		resolver.setSuffix(".html");
 		resolver.setExposeContextBeansAsAttributes(true);
-		
+		return resolver;
+	}
+	
+	@Bean(name = "multipartResolver")
+	public MultipartResolver multiPartResolver() {
+		CommonsMultipartResolver resolver = new CommonsMultipartResolver();
+		resolver.setMaxUploadSize(4 * 1024 * 1024);
+		resolver.setDefaultEncoding("utf-8");
 		return resolver;
 	}
 	
@@ -54,6 +68,18 @@ public class WebConfig implements WebMvcConfigurer{
 		configurer.enable();
 	}
 	
+	
+	/**
+	 * 描述：
+	 * 解决返回的JSON中文乱码问题
+	 */
+	@Override
+	public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+		StringHttpMessageConverter httpMessageConverter = new StringHttpMessageConverter(Charset.forName("utf-8"));
+		converters.add(httpMessageConverter);
+		WebMvcConfigurer.super.configureMessageConverters(converters);
+	}
+	
 	/**
 	 * 描述：
 	 * 配置静态资源的访问路径
@@ -63,8 +89,12 @@ public class WebConfig implements WebMvcConfigurer{
 		registry.addResourceHandler("/static/js/**").addResourceLocations("classpath:/static/js/");
 		registry.addResourceHandler("/static/css/**").addResourceLocations("classpath:/static/css/");
 		registry.addResourceHandler("/static/image/**").addResourceLocations("classpath:/static/image/");
+		registry.addResourceHandler("/static/luntanres/**").addResourceLocations("classpath:/static/luntanres/");
+		registry.addResourceHandler("/static/images/**").addResourceLocations("classpath:/static/images/");
 		WebMvcConfigurer.super.addResourceHandlers(registry);
 	}
+	
+	
 	
 	
 	/**

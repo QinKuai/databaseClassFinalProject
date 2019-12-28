@@ -1,0 +1,183 @@
+.__Login__{
+  background-color: #ffffff;
+  width: 460px;
+  left: 50%;
+  top: 50%;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0,0,0,.1);
+  padding: 92px 0 30px 0;
+  position: fixed;
+  transform: translate(-50%,-50%);
+}
+.__Login__Logo__{
+  position: absolute;
+  width: 172px;
+  top: 8px;
+  left: 142px;
+}
+.__Login__Logo__ img{
+  width: 100%;
+}
+.__Changes__{
+  width: 400px;
+  margin: 0 auto 10px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  color: #cacaca;
+}
+.__Changes__ a.__State__Active__{
+  color: #76b9f7;
+}
+.__Commons__{
+  position: relative;
+}
+.__Input__{
+  padding: 5px 0;
+  height: 44px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+  width: 340px;
+  margin: 0 auto 16px;
+  line-height: 14px;
+  display: block;
+}
+.__Input__ >label{
+  font-size: 14px;
+  position: absolute;
+  display: inline-block;
+  color: #cacaca;
+  top: 22px;
+  font-weight: 300;
+}
+.__Input__ >input{
+  outline: none;
+  border: none;
+  z-index: 5;
+  position: absolute;
+  top: 13px;
+  width: 340px;
+  background-color: transparent;
+  font-size: 20px;
+}
+.__Warning__{
+  position: absolute;
+  color: #ea5d5f;
+  font-size: 12px;
+  right: 0;
+  top: 22px;
+  display: none;
+}
+.__Warning__ i{
+  display: inline-block;
+  vertical-align: middle;
+  color: #ea5d5f;
+  font-size: 16px;
+  margin-top: -3px;
+  margin-left: 5px;
+}
+
+.__Forget__{
+  display: table;
+  width: 340px;
+  margin: 0 auto;
+}
+.__Forget__ a{
+  font-size: 12px;
+  color: #8d8d8d;
+  float: right;
+  cursor: pointer;
+}
+.__Forget__ a:hover{
+  color: #3895e8;
+}
+.__Button__{
+  display: block;
+  width: 100%;
+}
+.__Login__Btn__,.__Res__Btn__,.__Confirm__Btn__{
+  width: 340px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #42a5f5;
+  outline: none;
+  border: none;
+}
+.__State__Off__{
+  color: #a0a0a0;
+  background-color: #e5e5e5;
+}
+.__The__Code__{
+  color: #969696;
+  position: absolute;
+  right: 0;
+  top: 24px;
+  z-index: 10;
+}
+.__The__Code__:hover{
+  color: #3895e8;
+}
+.__Read__{
+  font-size: 14px;
+  color: #cacaca;
+  height: 30px;
+  margin: 20px auto 20px;
+  line-height: 30px;
+  width: 340px;
+}
+.__Read__ span{
+  display: inline-block;
+}
+.__Read__ span >input{
+  display: none;
+}
+.__Read__ span >label{
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+}
+.__Read__ span >label .fa-check-square{
+  display: none;
+  color: #42a5f5;
+}
+.__Read__ span input:checked ~ label .fa-check-square{
+  display: block;
+}
+.__Read__ span input:checked ~ label .fa-square{
+  display: none;
+}
+.__Read__ span a{
+  color: #42a5f5;
+}
+.__Have__Account{
+  width: 400px;
+  line-height: 18px;
+  font-size: 14px;
+  color: #cacaca;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+.__Have__Account a.__Go__To__Login__{
+  color: #42a5f5;
+}
+
+.__Bg__Move{
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  z-index: -1;
+}
+
+
+
+
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>添加按钮</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="牛素材" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3发布作品" transform="translate(-541.000000, -793.000000)">
+            <g id="上传作品" transform="translate(380.000000, 678.000000)">
+                <g id="上传文件" transform="translate(54.000000, 79.000000)">
+                    <g id="添加按钮" transform="translate(107.000000, 36.000000)">
+                        <circle id="Oval-3" fill="#F5A623" cx="13" cy="13" r="13"></circle>
+                        <g id="Group" transform="translate(7.000000, 7.000000)" fill="#FFFFFF">
+                            <rect id="Rectangle-6" x="0" y="5" width="12" height="2" rx="1"></rect>
+                            <rect id="Rectangle-6" transform="translate(6.000000, 6.000000) rotate(-90.000000) translate(-6.000000, -6.000000) " x="0" y="5" width="12" height="2" rx="1"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="88px" viewBox="0 0 44 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ipad</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ipad" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <rect id="Rectangle-9-Copy-3" x="0" y="0" width="44" height="88"></rect>
+                <rect id="Rectangle-9-Copy-4" x="0" y="0" width="44" height="44"></rect>
+                <g id="blue-iPad-" transform="translate(0.000000, 47.000000)">
+                    <g id="h-iPad-">
+                        <g transform="translate(22.000000, 19.000000) rotate(-90.000000) translate(-22.000000, -19.000000) translate(2.558140, -2.500000)">
+                            <ellipse id="Oval" fill="#2D8BFF" cx="19.9534884" cy="35.5" rx="2.55813953" ry="2.5"></ellipse>
+                            <rect id="Rectangle-6" stroke="#2D8BFF" stroke-width="3" x="1.5" y="1.5" width="35.8837209" height="40" rx="3"></rect>
+                            <rect id="Rectangle-8" fill="#2D8BFF" x="15.3488372" y="5" width="9.20930233" height="2" rx="1"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="h-iPad-" transform="translate(0.000000, 3.000000)">
+                    <g transform="translate(21.943182, 19.000000) rotate(-90.000000) translate(-21.943182, -19.000000) translate(2.943182, -1.948718)">
+                        <ellipse id="Oval" fill="#FFFFFF" cx="19.5" cy="34.5897436" rx="2.5" ry="2.43589744"></ellipse>
+                        <rect id="Rectangle-6" stroke="#FFFFFF" stroke-width="3" x="1.5" y="1.5" width="35" height="38.8974359" rx="3"></rect>
+                        <rect id="Rectangle-8" fill="#FFFFFF" x="15" y="4.87179487" width="9" height="1.94871795" rx="0.974358974"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

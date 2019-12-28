@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="88px" viewBox="0 0 44 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>pc</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="pc" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <rect id="Rectangle-9" x="0" y="0" width="44" height="88"></rect>
+                <rect id="Rectangle-9" x="0" y="44" width="44" height="44"></rect>
+                <g transform="translate(1.000000, 1.000000)">
+                    <g>
+                        <path d="M3,1.5 C2.17157288,1.5 1.5,2.17157288 1.5,3 L1.5,30 C1.5,30.8284271 2.17157288,31.5 3,31.5 L39,31.5 C39.8284271,31.5 40.5,30.8284271 40.5,30 L40.5,3 C40.5,2.17157288 39.8284271,1.5 39,1.5 L3,1.5 Z" id="Rectangle-2" stroke="#FFFFFF" stroke-width="3"></path>
+                        <rect id="Rectangle-3" fill="#FFFFFF" x="2" y="23" width="38" height="2"></rect>
+                        <rect id="Rectangle-3-Copy" fill="#FFFFFF" x="6" y="39" width="30" height="3" rx="1.5"></rect>
+                        <polygon id="Rectangle-4" fill="#FFFFFF" transform="translate(14.001803, 36.085083) rotate(-345.000000) translate(-14.001803, -36.085083) " points="13.0449867 32.112272 16.0449867 32.112272 14.9586193 40.057894 11.9586193 40.057894"></polygon>
+                        <polygon id="Rectangle-5" fill="#FFFFFF" transform="translate(28.001043, 36.173899) rotate(-15.000000) translate(-28.001043, -36.173899) " points="25.9860431 32.0988418 28.9848723 32.0988418 30.0160433 40.2489571 27.017214 40.2489571"></polygon>
+                    </g>
+                </g>
+                <g id="blue-pc" transform="translate(1.000000, 45.000000)">
+                    <g>
+                        <path d="M3,1.5 C2.17157288,1.5 1.5,2.17157288 1.5,3 L1.5,30 C1.5,30.8284271 2.17157288,31.5 3,31.5 L39,31.5 C39.8284271,31.5 40.5,30.8284271 40.5,30 L40.5,3 C40.5,2.17157288 39.8284271,1.5 39,1.5 L3,1.5 Z" id="Rectangle-2" stroke="#2D8BFF" stroke-width="3"></path>
+                        <rect id="Rectangle-3" fill="#2D8BFF" x="2" y="23" width="38" height="2"></rect>
+                        <rect id="Rectangle-3-Copy" fill="#2D8BFF" x="6" y="39" width="30" height="3" rx="1.5"></rect>
+                        <polygon id="Rectangle-4" fill="#2D8BFF" transform="translate(14.001803, 36.085083) rotate(-345.000000) translate(-14.001803, -36.085083) " points="13.0449867 32.112272 16.0449867 32.112272 14.9586193 40.057894 11.9586193 40.057894"></polygon>
+                        <polygon id="Rectangle-5" fill="#2D8BFF" transform="translate(28.001043, 36.173899) rotate(-15.000000) translate(-28.001043, -36.173899) " points="25.9860431 32.0988418 28.9848723 32.0988418 30.0160433 40.2489571 27.017214 40.2489571"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

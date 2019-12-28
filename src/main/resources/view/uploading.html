@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>星空</title>
+    <link rel="stylesheet" type="text/css" href="static/css/_Public.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/uploading.css" />
+    <script type="text/javascript" src="static/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/dropzone/dropzone.min.js"></script>
+    <script type="text/javascript" src="static/js/ownjs/public.js"></script>
+    <script type="text/javascript" src="static/js/ownjs/uploading.js"></script>
+    <script type="text/javascript" src="static/js/jquery/jquery.cookie.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+	<body>
+		<div class="__New__Su__Cai">
+			<!--header start-->
+            <nav class="__Header __State__Nav" id="__Nav__Header__New">
+                <div class="__Nav__Header__New__Class"></div>
+                <div class="__Logo__New"><span></span></div>
+                <div class="__Nav__List">
+                    <ul class="__New__Nav">
+                        <li>
+                            <a href="index">首页</a>
+                            <p class="__Underline__"></p>
+                        </li>
+                        <li>
+                            <a class="__Click__Envit __Temp" value="template" href="new_list_temp.html">影视</a>
+                            <p class="__Underline__"></p>
+                        </li>
+                        <li>
+                            <a class="__Click__Envit __Eff" value="effects" href="new_list.html">游戏</a>
+                            <p class="__Underline__"></p>
+                        </li>
+                        <li>
+                            <a class="__Click__Envit __Gam" value="game" href="new_list_game.html">其他</a>
+                            <p class="__Underline__"></p>
+                        </li>
+                        <li>
+                            <a href="site_navigation.html">论坛</a>
+                            <p class="__Underline__"></p>
+                        </li>
+                        <li class="__State__active">
+                            <a href="uploading.html">上传作品</a>
+                            <p class="__Underline__"></p>
+                        </li>
+                    </ul>
+
+                  
+
+                </div>
+                <div class="__Person__Info">
+                    <a class="__Search" href="javascript:void(0)">
+                        <i></i>
+                    </a>
+                    <div class="__Header__img">
+                        <a class="Header-Img">
+                            <img src="static/images/jpg/__header.jpg" />
+                        </a>
+                        <span class="_V_"><img src="static/images/svg/vip_v.svg"></span>
+                        <ul class="Dropdown_Menu">
+                            <li>
+                                <a href="home_page" id="my"></a>
+                            </li>
+                            <li>
+                                <a href="my_info">我的资料</a>
+                            </li>
+                            <li>
+                                <a href="top_up">充值vip</a>
+                            </li>
+                            <!-- <li>
+                    <a href="top_up_kb.html">充值K币</a >
+                </li> -->
+                            <li>
+                                <a href="top_up_integral">充值积分</a>
+                            </li>
+                            <!-- <li>
+                    <a href="#">申请提现</a >
+                </li> -->
+                            <li>
+                                <a href="collection">我的收藏</a>
+                            </li>
+                            <li>
+                                <a href="focus_on">我的关注</a>
+                            </li>
+                            <li>
+                                <a href="to_audit">我的上传</a>
+                            </li>
+                            <li>
+                                <a href="download_list">下载列表</a>
+                            </li>
+                            <li>
+                                <a href="#">退出</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+			<!--uploading-->
+			<div class="__Uploading__">
+                
+                    <div class="__Uploading__Up">
+                        <div class="__Uploading__Title__">资源信息</div>
+                        <div class="__Uploading__Container__">
+                            <div class="__Uploading__List__ __Mandatory">
+                                <input id="resourcename" class="__Uploading__Name__" type="text" name="__Name__" placeholder="请输入资源名称" />
+                                <div class="__Uploading__False__">
+                                    <i class="fa fa-info-circle"></i>
+                                    <span>请输入资源名称</span>
+
+                                </div>
+                            </div>
+                            <div class="__Uploading__List__ __Mandatory">
+                                <div class="Dropdown">
+
+                                    <select id="resourcetype">
+                                        <option value="1" selected="selected">请选择资源类型</option>
+                                        <option value="2">影视</option>
+                                        <option value="3">游戏</option>
+                                        <option value="4">其他</option>
+
+                                    </select>
+
+                                </div>
+
+                                <div class="__Uploading__False__">
+                                    <i class="fa fa-info-circle"></i>
+                                    <span>请选择资源类型</span>
+                                </div>
+                            </div>
+                            <div class="__Uploading__List__ __Mandatory">
+
+                                <input id="resourcepoint" class="__Uploading__Money__" type="text" name="__Name__" placeholder="请输入下载所需积分数" />
+                                <div class="__Uploading__False__">
+                                    <i class="fa fa-info-circle"></i>
+                                    <span>请输入下载所需积分数</span>
+                                </div>
+                            </div>
+                            <div class="__Uploading__List__ __Mandatory">
+
+                                <input id="resourceurl" class="__Uploading__Money__" type="text" name="__Name__" placeholder="请输入URL" />
+                                <div class="__Uploading__False__">
+                                    <i class="fa fa-info-circle"></i>
+                                    <span>请输入资源URL</span>
+                                </div>
+                            </div>
+                            
+                            <div class="__Uploading__List__ __Mandatory">
+                                <input id="resourcecontent" class="__Uploading__Name__" type="text" name="__Name__" placeholder="请输入资源说明" />
+                                <div class="__Uploading__False__">
+                                    <i class="fa fa-info-circle"></i>
+                                    <span>请输入资源说明</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <!--上传展示图-->
+                    <div class="__Uploading__Up __Show__Pic">
+                        <div class="__Uploading__Title__">上传资源图片</div>
+                       
+                        <div class="__Uploading__Container__">
+                            <form id="uploadForm" enctype="multipart/form-data" method="post">
+                                <input type="file" name="picture" class="form-control" id="zx_img" style="padding-left: 95px; padding-bottom:20px"
+                                       placeholder="&nbsp;上传文件">
+                            </form>
+                            
+                            <div class="__Uploading__List__ __Mandatory">
+
+                                <div class="dropz_show_pic __Common__Show__" id="dropz_show_pic">
+
+                                    <img class="__Update__Btns__" id="img_preview" src=""/>
+                                 
+
+                                </div>
+
+                                <script>
+                                    //上传图片选择文件改变后刷新预览图
+                                    $("#zx_img").change(function (e) {
+                                        var file = e.target.files || e.dataTransfer.files;  //获取目标文件
+                                        console.log(file[0])
+                                        if (file) {   //如果目标文件存在
+                                            var reader = new FileReader();   //定义一个文件阅读器
+                                            reader.onload = function () {   //文件装载后将其显示在图片预览里
+                                                $("#img_preview").attr("src", this.result);
+                                              
+                                            };
+                                            reader.readAsDataURL(file[0]);  //装载文件
+                                        }
+                                       
+                               
+                                    });
+                                </script>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                 
+
+
+
+                
+			</div>
+
+			<!--button sure-->
+			<div class="__Release__">
+				<div class="__Btns__ __Rel__Btn" id="upload">上传</div>
+				<div class="__Btns__ __Rel__Cancle" id="cancel">取消</div>
+			</div>
+
+			<!--底部开始-->
+      <div class="__Footer__">
+        <div class="__Footer__Container">
+          <div class="__Footer__List__">
+            <a href="about" target="_blank">关于我们</a>
+            <a href="top_up" target="_blank">积分/K币充值</a>
+            <a href="agreement" target="_blank">用户协议</a>
+       
+            <a href="feedback" target="_blank">用户反馈</a>
+          </div>
+          
+        </div>
+      </div>
+
+		</div>
+	</body>
+</html>

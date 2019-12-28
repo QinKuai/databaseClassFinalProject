@@ -30,11 +30,24 @@
 	from user where u_email=#{uEmail, jdbcType=VARCHAR}  
   </select>
   
-  <update id="updateByUsername" parameterType="databaseclass.finalproject.entity.User">
-  	
+  <select id="selectAll" resultMap="BaseResultMap">
+  	select * from user
+  </select>
+  
+  <update id="updateUser" parameterType="databaseclass.finalproject.entity.User">
+  	update user set u_password=#{uPassword, jdbcType=VARCHAR}, u_email=#{uEmail,jdbcType=VARCHAR}
+  	where username=#{username, jdbcType=VARCHAR}
   </update>
   
-  <delete id="deleteByUsername" parameterType="java.lang.String">
+  <update id="updatePoint">
+  	update user set u_point=#{point, jdbcType=INTEGER}
+  	where username=#{username, jdbcType=VARCHAR}
+  </update>
   
+  <update id="updateExp"></update>
+  
+  <delete id="deleteByUsername" parameterType="java.lang.String">
+  	delete * from user 
+  	where username=#{username, jdbcType=VARCHAR}
   </delete>
 </mapper>

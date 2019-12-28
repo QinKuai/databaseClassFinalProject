@@ -18,15 +18,22 @@ import com.alibaba.fastjson.JSONObject;
 import databaseclass.finalproject.dao.UserMapper;
 import databaseclass.finalproject.entity.User;
 import databaseclass.finalproject.value.ResponseCode;
+import databaseclass.finalproject.value.UserSex;
 import databaseclass.finalproject.value.UserType;
 
+/**
+ * @author QinKuai
+ * 创建时间：2019年12月11日
+ * 描述：
+ * 负责注册页面跳转以及
+ * 注册信息的校验
+ */
 @Controller
 public class RegisterController {
 	@Autowired
 	private UserMapper userDao;
 	
 	private static Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
-	
 	
 	/**
 	 * 描述：
@@ -40,6 +47,8 @@ public class RegisterController {
 	/**
 	 * 描述：
 	 * 用户注册信息校验
+	 * 用户名，密码，性别，邮箱为必填项
+	 * 不填写以上信息，必定会注册失败
 	 */
 	@RequestMapping(value = "/register/check", method = RequestMethod.GET)
 	@ResponseBody
@@ -50,6 +59,24 @@ public class RegisterController {
 		if (errors.hasErrors()) {
 			json.put(ResponseCode.KEY, ResponseCode.ERROR);
 			return json.toJSONString();
+		}
+		
+		//校验用户名是否已存在
+		User user1 = userDao.selectByUsername(user.getUsername());
+		if (user1 != null) {
+			json.put(ResponseCode.KEY, ResponseCode.USER_EXIST);
+			return json.toJSONString();
+		}
+		
+		//校验用户邮箱是否已存在
+		user1 = userDao.selectByEmail(user.getuEmail());
+		if (user1 != null) {
+			json.put(ResponseCode.KEY, ResponseCode.EMAIL_EXIST);
+			return json.toJSONString();
+		}
+		
+		if (user.getuSex() == null || user.getuSex().equals("")) {
+			user.setuSex(UserSex.UNKNOWN);
 		}
 		
 		//获取用户注册时间

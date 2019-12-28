@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="databaseclass.finalproject.dao.UserFollowMapper">
+  <resultMap id="BaseResultMap" type="databaseclass.finalproject.entity.UserFollow">
+    <id column="follower" jdbcType="VARCHAR" property="follower" />
+    <id column="following" jdbcType="VARCHAR" property="following" />
+    <result column="follow_date" jdbcType="DATE" property="followDate" />
+    <result column="cancel_date" jdbcType="DATE" property="cancelDate" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from user_follow
+    where follower = #{follower,jdbcType=VARCHAR}
+      and `following` = #{following,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="databaseclass.finalproject.entity.UserFollow">
+    insert into user_follow (follower, `following`, follow_date)
+    values (#{follower, jdbcType=VARCHAR}, #{following,jdbcType=VARCHAR}, #{followDate,jdbcType=DATE})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="databaseclass.finalproject.entity.UserFollow">
+    update user_follow
+    set follow_date = #{followDate,jdbcType=DATE}
+    where follower = #{follower,jdbcType=VARCHAR}
+      and `following` = #{following,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select follower, `following`, follow_date, cancel_date
+    from user_follow
+    where follower = #{follower,jdbcType=VARCHAR}
+      and `following` = #{following,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select follower, `following`, follow_date, cancel_date
+    from user_follow
+  </select>
+  
+  <select id="selectFollower" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	select * from user_follow
+  	where following=#{username, jdbcType=VARCHAR}
+  </select>
+  
+  <select id="selectFollowing" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	select * from user_follow
+  	where follower=#{username, jdbcType=VARCHAR}
+  </select>
+  
+  <select id="selectFollowerCount" parameterType="java.lang.String" resultType="java.lang.Integer">
+  	select count(*) from user_follow
+  	where following=#{username, jdbcType=VARCHAR}
+  </select>
+  
+  <select id="selectFollowingCount" parameterType="java.lang.String" resultType="java.lang.Integer">
+  	select count(*) from user_follow
+  	where follower=#{username, jdbcType=VARCHAR}
+  </select>
+  
+</mapper>

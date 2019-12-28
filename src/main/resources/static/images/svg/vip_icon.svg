@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="24px" viewBox="0 0 28 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>黄</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="more_diamond" transform="translate(-2.000000, -4.000000)">
+            <g id="黄">
+                <rect id="Rectangle-12-Copy" x="0" y="0" width="32" height="32"></rect>
+                <g id="钻石-copy" transform="translate(2.181818, 4.363636)" fill-rule="nonzero">
+                    <polygon id="Shape" fill="#FEC91A" points="21.8879117 4.98843513 24.8290854 1.47409856 21.8879117 0.00139880721 17.9472969 1.47409856"></polygon>
+                    <polygon id="Shape" fill="#FFC000" points="21.8879117 0.00139880721 13.6898396 0.00139880721 17.9472969 1.47409856"></polygon>
+                    <polygon id="Shape" fill="#FFD300" points="13.7056397 4.98843513 17.9472969 1.47409856 13.6898396 0.00139880721 9.43238218 1.47409856"></polygon>
+                    <polygon id="Shape" fill="#F5B423" points="27.3616414 4.98843513 21.8879117 4.98843513 24.8290854 1.47409856"></polygon>
+                    <polygon id="Shape" fill="#FEC91A" points="5.48134611 4.98843513 9.43238218 1.47409856 5.48134611 0.00139880721 2.55059373 1.47409856"></polygon>
+                    <polyline id="Shape" fill="#F5B423" points="0.0180377589 4.98843513 2.55059373 1.47409856 5.48134611 4.98843513 0.0180377589 4.98843513"></polyline>
+                    <polygon id="Shape" fill="#FFC000" points="5.48134611 0.00139880721 13.6898396 0.00139880721 9.43238218 1.47409856"></polygon>
+                    <polygon id="Shape" fill="#FFE574" points="5.48134611 4.98843513 8.37243011 4.98843513 9.43238218 1.47409856"></polygon>
+                    <polygon id="Shape" fill="#FCDC55" points="9.43238218 1.47409856 8.37243011 4.98843513 13.7056397 4.98843513"></polygon>
+                    <polygon id="Shape" fill="#FCDC55" points="13.7056397 4.98843513 19.011115 4.98843513 17.9472969 1.47409856"></polygon>
+                    <polygon id="Shape" fill="#FFE574" points="17.9472969 1.47409856 19.011115 4.98843513 21.8879117 4.98843513"></polygon>
+                    <polygon id="Shape" fill="#FFCE00" points="27.3616414 4.98843513 21.8879117 4.98843513 16.0585114 17.8993812"></polygon>
+                    <polygon id="Shape" fill="#F5B423" points="16.0585114 17.8993812 13.6898396 23.1455743 27.3616414 4.98843513"></polygon>
+                    <polygon id="Shape" fill="#FFCE00" points="11.3179741 17.8993812 5.48134611 4.98843513 0.0180377589 4.98843513"></polygon>
+                    <polygon id="Shape" fill="#F5B423" points="11.3179741 17.8993812 0.0180377589 4.98843513 13.6898396 23.1455743"></polygon>
+                    <polygon id="Shape" fill="#F9D53E" points="16.0585114 17.8993812 21.8879117 4.98843513 19.011115 4.98843513"></polygon>
+                    <polygon id="Shape" fill="#F9D53E" points="11.3179741 17.8993812 5.48134611 4.98843513 8.36856415 4.98843513"></polygon>
+                    <polygon id="Shape" fill="#F9D956" points="16.0585114 17.8993812 13.7056397 4.98843513 11.3179741 17.8993812 13.6898396 23.1455743"></polygon>
+                    <polygon id="Shape" fill="#FFE164" points="19.011115 4.98843513 13.7056397 4.98843513 16.0585114 17.8993812"></polygon>
+                    <polygon id="Shape" fill="#FFE164" points="8.36856415 4.98843513 13.7056397 4.98843513 11.3211677 17.8993812"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

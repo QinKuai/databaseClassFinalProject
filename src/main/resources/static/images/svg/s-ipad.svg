@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="88px" viewBox="0 0 44 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>s-ipad</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="s-ipad" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="s-ipsd">
+            <g>
+                <rect id="Rectangle-9" x="0" y="0" width="44" height="88"></rect>
+                <g id="s-iPad" transform="translate(3.000000, 0.500000)">
+                    <g>
+                        <circle id="Oval" fill="#FFFFFF" cx="19.5" cy="35.5" r="2.5"></circle>
+                        <rect id="Rectangle-6" stroke="#FFFFFF" stroke-width="3" x="1.5" y="1.5" width="35" height="40" rx="3"></rect>
+                        <rect id="Rectangle-8" fill="#FFFFFF" x="15" y="5" width="9" height="2" rx="1"></rect>
+                    </g>
+                </g>
+                <g id="blue-iPad" transform="translate(3.000000, 44.500000)">
+                    <g>
+                        <circle id="Oval" fill="#2D8BFF" cx="19.5" cy="35.5" r="2.5"></circle>
+                        <rect id="Rectangle-6" stroke="#2D8BFF" stroke-width="3" x="1.5" y="1.5" width="35" height="40" rx="3"></rect>
+                        <rect id="Rectangle-8" fill="#2D8BFF" x="15" y="5" width="9" height="2" rx="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

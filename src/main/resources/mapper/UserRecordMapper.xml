@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="databaseclass.finalproject.dao.UserRecordMapper">
+  <resultMap id="BaseResultMap" type="databaseclass.finalproject.entity.UserRecord">
+    <id column="r_id" jdbcType="VARCHAR" property="rId" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="r_type" jdbcType="CHAR" property="rType" />
+    <result column="r_date" jdbcType="DATE" property="rDate" />
+    <result column="r_info" jdbcType="VARCHAR" property="rInfo" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from user_record
+    where r_id = #{rId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="databaseclass.finalproject.entity.UserRecord">
+    <selectKey keyProperty="rId" order="AFTER" resultType="java.lang.String">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into user_record (username, r_type, r_date, 
+      r_info)
+    values (#{username,jdbcType=VARCHAR}, #{rType,jdbcType=CHAR}, #{rDate,jdbcType=DATE}, 
+      #{rInfo,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="databaseclass.finalproject.entity.UserRecord">
+    update user_record
+    set username = #{username,jdbcType=VARCHAR},
+      r_type = #{rType,jdbcType=CHAR},
+      r_date = #{rDate,jdbcType=DATE},
+      r_info = #{rInfo,jdbcType=VARCHAR}
+    where r_id = #{rId,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select r_id, username, r_type, r_date, r_info
+    from user_record
+    where r_id = #{rId,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select r_id, username, r_type, r_date, r_info
+    from user_record
+  </select>
+</mapper>

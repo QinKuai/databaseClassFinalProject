@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="databaseclass.finalproject.dao.PostMapper">
+  <resultMap id="BaseResultMap" type="databaseclass.finalproject.entity.Post">
+    <id column="postid" jdbcType="INTEGER" property="postid" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="posttitle" jdbcType="VARCHAR" property="posttitle" />
+    <result column="p_like" jdbcType="INTEGER" property="pLike" />
+    <result column="commentamount" jdbcType="INTEGER" property="commentamount" />
+    <result column="fieldid" jdbcType="INTEGER" property="fieldid" />
+    <result column="createdate" jdbcType="DATE" property="createDate" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+  </resultMap>
+  
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from post
+    where postid = #{postid,jdbcType=INTEGER}
+  </delete>
+  
+  <insert id="insert" parameterType="databaseclass.finalproject.entity.Post">
+    insert into post (username, posttitle, fieldid, createdate, content)
+    values (#{username,jdbcType=VARCHAR}, #{posttitle,jdbcType=VARCHAR},
+     #{fieldid,jdbcType=INTEGER}, #{createDate, jdbcType=DATE}, #{content, jdbcType=VARCHAR})
+  </insert>
+  
+  <update id="updateByPrimaryKey" parameterType="databaseclass.finalproject.entity.Post">
+    update post
+    set username = #{username,jdbcType=VARCHAR},
+      posttitle = #{posttitle,jdbcType=VARCHAR},
+      p_like = #{pLike,jdbcType=INTEGER},
+      fieldid = #{fieldid,jdbcType=INTEGER},
+      createdate = #{createDate, jdbcType=DATE},
+      content = #{content, jdbcType=VARCHAR}
+    where postid = #{postid,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select *
+    from post
+    where postid = #{postid,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select *
+    from post
+  </select>
+  
+  <select id="selectTop10ByTime" resultMap="BaseResultMap">
+  	select * from post
+  	order by createdate desc
+  	limit 10 
+  </select>
+  
+   <select id="selectTop10ByLike" resultMap="BaseResultMap">
+  	select * from post
+  	order by p_like desc
+  	limit 10
+  </select>
+  
+  <select id="selectHomePageByTime" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  	select * from post
+  	where fieldid=#{fieldid, jdbcType=INTEGER}
+  	order by createdate desc
+  </select>
+  
+  <select id="selectHomePageByLike" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  	select * from post
+  	where fieldid=#{fieldid, jdbcType=INTEGER}
+  	order by p_like desc
+  </select>
+  
+  <select id="selectHomePageAllByLike" resultMap="BaseResultMap">
+  	select * from post
+  	order by p_like desc
+  </select>
+  
+  <select id="selectHomePageAllByTime" resultMap="BaseResultMap">
+  	select * from post
+  	order by createdate desc
+  </select>
+  
+  <select id="selectPostByUsername" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	select * from post
+  	where username=#{username, jdbcType=VARCHAR}
+  	order by createdate
+  </select>
+  
+  <update id="updatePostLike" parameterType="java.lang.Integer">
+  	update post set p_like = p_like + 1 where postid=#{postid, jdbcType=INTEGER}
+  </update>
+  
+  <select id="getLastInsertID" resultType="java.lang.Integer">
+  	select LAST_INSERT_ID()
+  </select>
+</mapper>

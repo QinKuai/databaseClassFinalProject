@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="98px" viewBox="0 0 8 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#EEEEEE" stop-opacity="0.18322577" offset="0%"></stop>
+            <stop stop-color="#D8D8D8" stop-opacity="0.496574955" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分割">
+            <polygon id="Star" fill="#CCCCCC" points="4 51 1.64885899 52.236068 2.09788697 49.618034 0.195773935 47.763932 2.8244295 47.381966 4 45 5.1755705 47.381966 7.80422607 47.763932 5.90211303 49.618034 6.35114101 52.236068"></polygon>
+            <path d="M3.9993697,38 C4.55130635,38 4.9987394,37.5525669 4.9987394,37.0006303 C4.9987394,36.4486937 4.55130635,0 3.9993697,0 C3.44743306,0 3,36.4486937 3,37.0006303 C3,37.5525669 3.44743306,38 3.9993697,38 Z" id="Oval-3" fill="url(#linearGradient-1)"></path>
+            <circle id="Oval-4" fill="#D8D8D8" cx="4" cy="41" r="1"></circle>
+            <path d="M3.9993697,98 C4.55130635,98 4.9987394,97.5525669 4.9987394,97.0006303 C4.9987394,96.4486937 4.55130635,60 3.9993697,60 C3.44743306,60 3,96.4486937 3,97.0006303 C3,97.5525669 3.44743306,98 3.9993697,98 Z" id="Oval-3" fill="url(#linearGradient-1)" transform="translate(3.999370, 79.000000) rotate(-180.000000) translate(-3.999370, -79.000000) "></path>
+            <circle id="Oval-4" fill="#D8D8D8" cx="4" cy="57" r="1"></circle>
+        </g>
+    </g>
+</svg>

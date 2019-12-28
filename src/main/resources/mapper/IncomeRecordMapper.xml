@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="databaseclass.finalproject.dao.IncomeRecordMapper">
+  <resultMap id="BaseResultMap" type="databaseclass.finalproject.entity.IncomeRecord">
+    <id column="in_id" jdbcType="INTEGER" property="inId" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="fee" jdbcType="REAL" property="fee" />
+    <result column="teetype" jdbcType="CHAR" property="teetype" />
+    <result column="in_date" jdbcType="TIMESTAMP" property="inDate" />
+  </resultMap>
+  
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from income_record
+    where in_id = #{inId,jdbcType=INTEGER}
+  </delete>
+  
+  <insert id="insert" parameterType="databaseclass.finalproject.entity.IncomeRecord">
+    insert into income_record (username, fee, teetype, 
+      in_date)
+    values (#{username,jdbcType=VARCHAR}, #{fee,jdbcType=REAL}, #{teetype,jdbcType=CHAR}, 
+      #{inDate,jdbcType=TIMESTAMP})
+  </insert>
+  
+  <update id="updateByPrimaryKey" parameterType="databaseclass.finalproject.entity.IncomeRecord">
+    update income_record
+    set username = #{username,jdbcType=VARCHAR},
+      fee = #{fee,jdbcType=REAL},
+      teetype = #{teetype,jdbcType=CHAR},
+      in_date = #{inDate,jdbcType=TIMESTAMP}
+    where in_id = #{inId,jdbcType=INTEGER}
+  </update>
+  
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select in_id, username, fee, teetype, in_date
+    from income_record
+    where in_id = #{inId,jdbcType=INTEGER}
+  </select>
+  
+  <select id="selectAll" resultMap="BaseResultMap">
+    select in_id, username, fee, teetype, in_date
+    from income_record
+  </select>
+  
+  <select id="selectByUsername" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	select * from income_record
+  	where username=#{username, jdbcType=VARCHAR}
+  	order by in_date desc
+  </select>
+</mapper> 

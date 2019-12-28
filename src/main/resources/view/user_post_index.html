@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>用户中心</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="fly,layui,前端社区">
+  <meta name="description" content="Fly社区是模块化前端UI框架Layui的官网社区，致力于为web开发提供强劲动力">
+  <link rel="stylesheet" href="static/luntanres/layui/css/layui.css">
+  <link rel="stylesheet" href="static/luntanres/css/global.css">
+</head>
+<body>
+
+<div class="fly-header layui-bg-black">
+  <div class="layui-container">
+    <a class="" href="">
+    </a>
+    <ul class="layui-nav fly-nav layui-hide-xs">
+      <li class="layui-nav-item layui-this">
+        <a href="forum"><i class="iconfont icon-jiaoliu"></i>首页</a>
+      </li>
+      <li class="layui-nav-item">
+        <a href=""><i class="iconfont icon-iconmingxinganli"></i>我发的贴</a>
+      </li>
+<!--      <li class="layui-nav-item">-->
+<!--        <a href="http://www.layui.com/" target="_blank"><i class="iconfont icon-ui"></i></a>-->
+<!--      </li>-->
+    </ul>
+    
+    <ul class="layui-nav fly-nav-user">
+      <!-- 登入后的状态 -->
+      <li class="layui-nav-item">
+        <a class="fly-nav-avatar" href="javascript:;">
+          <cite id="userName" class="layui-hide-xs">贤心</cite>
+<!--          <i class="iconfont icon-renzheng layui-hide-xs" title="认证信息：layui 作者"></i>-->
+<!--          <i class="layui-badge fly-badge-vip layui-hide-xs">VIP3</i>-->
+          <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg">
+        </a>
+<!--        <dl class="layui-nav-child">-->
+<!--          <dd><a href="../user/set.html"><i class="layui-icon">&#xe620;</i>基本设置</a></dd>-->
+<!--          <dd><a href="../user/message.html"><i class="iconfont icon-tongzhi" style="top: 4px;"></i>我的消息</a></dd>-->
+<!--          <dd><a href="../user/home.html"><i class="layui-icon" style="margin-left: 2px; font-size: 22px;">&#xe68e;</i>我的主页</a></dd>-->
+<!--          <hr style="margin: 5px 0;">-->
+<!--          <dd><a href="" style="text-align: center;">退出</a></dd>-->
+<!--        </dl>-->
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="layui-container fly-marginTop fly-user-main">
+  <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="user">
+<!--    <li class="layui-nav-item">-->
+<!--      <a href="home.html">-->
+<!--        <i class="layui-icon">&#xe609;</i>-->
+<!--        我的主页-->
+<!--      </a>-->
+<!--    </li>-->
+    <li class="layui-nav-item layui-this">
+      <a href="index.html">
+        <i class="layui-icon">&#xe612;</i>
+        我的帖子
+      </a>
+    </li>
+<!--    <li class="layui-nav-item">-->
+<!--      <a href="set.html">-->
+<!--        <i class="layui-icon">&#xe620;</i>-->
+<!--        基本设置-->
+<!--      </a>-->
+<!--    </li>-->
+<!--    <li class="layui-nav-item">-->
+<!--      <a href="message.html">-->
+<!--        <i class="layui-icon">&#xe611;</i>-->
+<!--        我的消息-->
+<!--      </a>-->
+<!--    </li>-->
+  </ul>
+
+  <div class="site-tree-mobile layui-hide">
+    <i class="layui-icon">&#xe602;</i>
+  </div>
+  <div class="site-mobile-shade"></div>
+  
+  <div class="site-tree-mobile layui-hide">
+    <i class="layui-icon">&#xe602;</i>
+  </div>
+  <div class="site-mobile-shade"></div>
+  
+  
+  <div class="fly-panel fly-panel-user" pad20>
+    <!--
+    <div class="fly-msg" style="margin-top: 15px;">
+      您的邮箱尚未验证，这比较影响您的帐号安全，<a href="activate.html">立即去激活？</a>
+    </div>
+    -->
+    <div class="layui-tab layui-tab-brief" lay-filter="user">
+      <ul class="layui-tab-title" id="LAY_mine">
+        <li data-type="mine-jie" lay-id="index" class="layui-this">我发的帖（<span id="postCount">89</span>）</li>
+<!--        <li data-type="collection" data-url="/collection/find/" lay-id="collection">我收藏的帖（<span id="我不收藏">16</span>）</li>-->
+      </ul>
+      <div class="layui-tab-content" style="padding: 20px 0;">
+        <div class="layui-tab-item layui-show">
+          <ul id="list" class="mine-view jie-row">
+<!--            <li>-->
+<!--              <a class="jie-title" href="../jie/detail.html" target="_blank">基于 layui 的极简社区页面模版</a>-->
+<!--              <i>2017/3/14 上午8:30:00</i>-->
+
+<!--              <em>661阅/10答</em>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a class="jie-title" href="../jie/detail.html" target="_blank">基于 layui 的极简社区页面模版</a>-->
+<!--              <i>2017/3/14 上午8:30:00</i>-->
+<!--              <a class="mine-edit" href="/jie/edit/8116">编辑</a>-->
+<!--              <em>661阅/10答</em>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a class="jie-title" href="../jie/detail.html" target="_blank">基于 layui 的极简社区页面模版</a>-->
+<!--              <i>2017/3/14 上午8:30:00</i>-->
+<!--              <a class="mine-edit" href="/jie/edit/8116">编辑</a>-->
+<!--              <em>661阅/10答</em>-->
+<!--            </li>-->
+          </ul>
+          <div id="LAY_page"></div>
+        </div>
+        <div class="layui-tab-item">
+          <ul class="mine-view jie-row">
+            <li>
+              <a class="jie-title" href="../jie/detail.html" target="_blank">基于 layui 的极简社区页面模版</a>
+              <i>收藏于23小时前</i>  </li>
+          </ul>
+          <div id="LAY_page1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fly-footer">
+  <p><a href="../index" target="_blank">星空论坛</a> 2019 &copy; <a href="http://www.layui.com/" target="_blank">第五组出品</a></p>
+</div>
+
+<script src="static/luntanres/layui/layui.js"></script>
+<script>
+layui.cache.page = 'user';
+layui.cache.user = {
+  username: '游客'
+  ,uid: -1
+  ,avatar: 'static/luntanres/images/avatar/00.jpg'
+  ,experience: 83
+  ,sex: '男'
+};
+layui.config({
+  version: "3.0.0"
+  ,base: 'static/luntanres/mods/'
+}).extend({
+  fly: 'index'
+}).use('fly');
+</script>
+
+<script src="static/js/jquery/jquery-3.3.1.js"></script>
+
+<script src="static/js/jquery/jquery.cookie.js"></script>
+<script>
+  var username1 = "DYB";  $.cookie('username', username1, {
+    path: '/'
+  });
+
+  var username = $.cookie('username');
+  $('#userName').text(username)
+
+</script>
+
+<script>
+
+
+  // for(var i = 0;i<52;i++){
+  //   addpostMessage("费劲","2019","sd")
+  // }
+
+
+
+  function addpostMessage(postid,title,time,like) {
+    var $addpostmessage = $("<div><li id ="+postid+">" +
+            "              <a id='title' class=\"jie-title\" href=\"posts/"+postid+"\" >基于 layui 的极简社区页面模版</a>\n" +
+            "              <i id='time'>2017/3/14 上午8:30:00</i>\n" +
+            " <a id='delete'class=\"mine-edit\" >消除</a>"+
+            "              <em >点赞数:&nbsp<a id='reply'>661阅/10答</a></em>\n" +
+            "            </li></div>")
+
+    var addpostmessage = $addpostmessage.appendTo("#list")
+
+
+
+    addpostmessage.find("#title").text(title)
+    addpostmessage.find("#time").text(time)
+    addpostmessage.find("#reply").text(like)
+    addpostmessage.find("#delete").click(function () {
+      var postid = $(this).parent().attr("id")
+
+      urls = "post/delete?username="+username+"&postid="+postid
+      flag = confirm("确认消除?")
+      if(!flag){
+        return
+      }
+      $.get({
+        url:urls,
+        data:{},
+        success:function () {
+
+
+
+          var count = $('#postCount').text()
+          // alert(count)
+          $('#postCount').text(count-1)
+          // alert(postid)
+        }
+      })
+
+      $(this).parent().parent().remove()
+
+      alert("删除成功")
+
+
+
+
+
+
+    })
+  }
+
+  $('#postCount').text($("#list").find("li").length)
+
+
+  var userName = $.cookie('username');
+  urls = "post/mypost?username="+userName
+
+  $.get({
+    url:urls,
+    data:{},
+    success:function (data) {
+      var jsonObj = JSON.parse(data)
+      commentlist = jsonObj.posts
+      $('#postCount').text(commentlist.length)
+      for(var i = 0 ; i<commentlist.length;i++){
+        addpostMessage(commentlist[i].postid,commentlist[i].posttitle,dateFormat(commentlist[i].createdate),commentlist[i].pLike)
+      }
+    }
+  })
+
+
+  function dateFormat(time) {
+    var date = new Date(time);
+    var year = date.getFullYear();
+    /* 在日期格式中，月份是从0开始的，因此要加0
+     * 使用三元表达式在小于10的前面加0，以达到格式统一  如 09:11:05
+     * */
+    var month = date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
+    var day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
+    var hours = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
+    var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+    var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+    // 拼接
+    return year + "-" + month + "-" + day + " " + hours + ":" + minutes + ":" + seconds;
+  }
+</script>
+
+
+
+
+</body>
+</html>

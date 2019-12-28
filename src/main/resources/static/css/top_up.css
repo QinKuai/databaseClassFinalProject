@@ -1,0 +1,1184 @@
+.__Top__Up__{
+  width: 1160px;
+  margin: 90px auto 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.__Top__Left{
+  width: 210px;
+}
+.__Top__User__Info{
+  width: 100%;
+  overflow: hidden;
+}
+.__Top__Infos{
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 30px 0;
+}
+.__Top__User__Info .__Top__Infos ._V_{
+  top: 86px;
+  left: 122px;
+  width: 20px;
+  height: 20px;
+}
+a.__Header__Img{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+a.__Header__Img img{
+  width: 100%;
+}
+.__Top__Infos >h3{
+  display: block;
+  font-size: 16px;
+  color: #222222;
+  margin-top: 12px;
+}
+.__Top__Infos >span{
+  display: block;
+  font-size: 12px;
+  color: #BBBBBB;
+  padding: 4px 0;
+}
+.__Top__Coin{
+  display: flex;
+  justify-content: space-around;
+  background-color: #52596c;
+  padding: 10px 20px;
+}
+.__Top__Coin span{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: #ffffff;
+}
+.__Top__Coin span.__name__{
+  padding-bottom: 5px;
+}
+.__Integral{
+
+}
+.__Top__Common{
+  overflow: hidden;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+}
+.__Top__List{
+  margin: 20px auto;
+}
+.__Top__List ul{
+  overflow: hidden;
+}
+.__Top__List ul li{
+  display: inline-block;
+  width: 100%;
+  padding: 9px 0;
+}
+.__Top__List ul li:hover{
+  background-color: #f2f2f2;
+}
+.__Top__List ul li a{
+  display: block;
+  padding: 4px 20px;
+  font-size: 14px;
+  color: #555555;
+  border-left: 3px solid transparent;
+}
+.__Active__ a{
+  border-left: 3px solid #2D8BFF !important;
+  color: #2D8BFF !important;
+}
+
+.__Top__Right{
+  width: 930px;
+}
+.__Focus__Tabs__{
+
+}
+.__Tabs__ ul li,.__Focus__Tabs__ ul li{
+  overflow: hidden;
+  float: left;
+  margin-right: 60px;
+  cursor: pointer;
+}
+.__Tabs__ ul li span,.__Focus__Tabs__ ul li span{
+  display: block;
+  padding: 16px 0;
+  color: #939FB4;
+  font-size: 14px;
+}
+.__Tabs__ ul li.__Act__ span,.__Focus__Tabs__ ul li.__Act__ span{
+  color: #222222;
+  border-bottom: 2px solid #222222;
+}
+
+.__Top__Tabs__Con,.__Tabs__,.__Focus__Tabs__{
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+  padding: 0 30px;
+  margin-bottom: 20px;
+}
+.__Top__Tabs__Con .__All__List{
+  overflow: hidden;
+}
+.__Tab__Title{
+  overflow: hidden;
+  border-bottom: 1px solid #F0F0F0;
+  padding: 15px 0;
+}
+.__Tab__Title h5{
+  display: inline-block;
+  font-size: 14px;
+  color: #666666;
+}
+.__Tab__Title h5 small,.__Tab__Title span small{
+  color: #EA4335;
+  font-size: 14px;
+}
+.__Tab__Title span{
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 30px;
+  color: #939FB4;
+}
+.__Tab__Title span a{
+  color: #3cb7ff;
+  font-size: 13px;
+  cursor: pointer;
+}
+.__Tab__Title span a:hover{
+  text-decoration: underline;
+}
+
+.__Chong__List{
+  border-bottom: 1px solid #F0F0F0;
+  padding: 0 3px;
+}
+.__Chong__{
+  display: inline-block;
+}
+.__Chong__ ul{
+  display: inline-block;
+}
+.__Chong__ ul li{
+  position: relative;
+  display: inline-block;
+  justify-content: space-between;
+  width: 268px;
+  margin-left: 30px;
+  border: 1px solid #CCCCCC;
+  background-color: #F8F8F8;
+  box-sizing: border-box;
+  margin-top: 30px;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: default;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+.__Chong__ ul li:hover{
+  box-shadow: 0px 0px 5px rgba(153,153,153,0.3);
+}
+.__Chong__ ul li:nth-of-type(3n+1){
+  margin-left: 0;
+}
+.__Chong__ ul li.__State__Act__{
+  box-shadow: 0px 0px 6px rgba(234,67,53,0.3) !important;
+  border: 1px solid transparent;
+}
+
+.__Chong__ ul li.__State__Act__:before{
+  content: '';
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: #EA4335;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.__Chong__ ul li.__State__Act__:after{
+  content: '✓';
+  position: absolute;
+  right: 1px;
+  bottom: -1px;
+  color: #ffffff;
+}
+
+/*.__Vip__Left{
+  float: left;
+  padding: 20px 14px;
+  text-align: center;
+  position: relative;
+}
+.__Vip__Left:before{
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  background-image: url(../images/svg/divider.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;;
+}
+.__Vip__Left .__Vip__Img{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../images/svg/more_diamond.svg);
+  background-repeat: no-repeat;
+}
+.__Vip__Left .__Vip__Title{
+  font-size: 14px;
+  color: #555555;
+  text-align: center;
+}
+.__Vip__Right{
+  float: right;
+  padding: 24px 0;
+  width: 178px;
+  text-align: center;
+}
+.__Vip__Right .__Right__Title__{
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #555555;
+}
+.__Vip__Right .__Right__Con__{
+
+}
+.__Vip__Right .__Right__Con__ span{
+  display: inline-block;
+  color: #FE5200;
+  font-size: 12px;
+}*/
+span.__Price__{
+  color: #999999 !important;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+.__Vip__Right .__Right__Con__ span small{
+  font-size: 24px;
+}
+.__Alipay{
+  padding-bottom: 30px;
+}
+.__Alipay span{
+  display: block;
+  font-size: 12px;
+  color: #666666;
+  padding: 16px 0;
+}
+.__Pay__Type{
+  display: block;
+}
+.__Pay__Type .__Alipay__{
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  height: 60px;
+  overflow: hidden;
+  border: 1px solid #e8e8e8;
+}
+.__Pay__Type .__Alipay__.__Checked{
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 6px rgba(234,67,53,0.3);
+}
+.__Pay__Type .__Alipay__.__Checked:before{
+  content: '';
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: #EA4335;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.__Pay__Type .__Alipay__.__Checked:after{
+  content: '✓';
+  position: absolute;
+  right: 1px;
+  bottom: -1px;
+  color: #ffffff;
+}
+.__KFZ{
+  margin-left: 20px;
+}
+.__Pay__Button{
+  padding: 50px 0;
+  float: right;
+}
+.__Pay__Num{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.__Pay__Num span{
+  float: right;
+  width: 100%;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.__Pay__Num span small{
+  font-size: 18px;
+  color: #EA4335;
+}
+.__Pay__Num button{
+  float: right;
+  padding: 15px 72px;
+  background-color: #bebebe;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 3px;
+  cursor: not-allowed;
+}
+.__Pay__Num button.state-buys{
+  background-color: #EA4335;
+  cursor: default;
+}
+
+/****积分css****/
+.__Common__ ul li{
+  width: 180px;
+  margin-left: 40px; 
+  padding: 8px 0;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  background-color: #ffffff;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+.__Common__ ul li:nth-of-type(3n+1){
+  margin-left: 50px;
+}
+.__Common__ ul li:nth-of-type(4n+1){
+  margin-left: 0;
+}
+.__Common__ ul li span{
+  float: left;
+  line-height: 30px;
+  width: 50%;
+  text-align: center;
+}
+.__Common__ ul li:hover{
+  box-shadow: 0px 0px 5px rgba(153,153,153,0.3);
+}
+span.__kb__{
+  border-right: 1px solid #EFEFEF;
+  color: #EA4335;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+.__kb__Money__{
+  font-size: 12px;
+  color: #939FB4;
+}
+span.__kb__ small{
+  font-size: 16px;
+}
+
+/**黄金买手**/
+.__Buy__Con .__All__List{
+  display: none;
+}
+.__State__Show{
+  display: block !important;
+}
+.__Buy__XY{
+  padding: 20px 0;
+  font-size: 14px;
+}
+.choose-list{
+  overflow: hidden;
+}
+.choose-list >h5{
+  display: block;
+  font-size: 14px;
+  color: #666666;
+  padding: 13px 0;
+  font-weight: normal;
+}
+.choose-container{
+  overflow: hidden;
+  border: 1px solid #DDDDDD;
+  box-sizing: border-box;
+}
+.choose-header{
+  overflow: hidden;
+  background-color: #F9FAFB;
+  padding: 0 48px;
+}
+.choose-header ul{
+  overflow: hidden;
+}
+.choose-header ul li{
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 12px;
+  color: #666666;
+}
+.choose-content{
+  padding: 0 48px;
+  overflow: hidden;
+}
+.choose-content ul{
+  overflow: hidden;
+}
+.choose-content ul li{
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 15px 0;
+  line-height: 28px;
+  color: #555555;
+}
+.add-number{
+  overflow: hidden;
+  display: inline-block;
+}
+.choose-content ul li .number-input{
+  float: left;
+  width: 70px;
+  height: 28px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-color: #CCCCCC;
+  border-style: solid none;
+  box-sizing: border-box;
+  line-height: 28px;
+  outline: none;
+  text-align: center;
+  color: #FE5200;
+}
+.choose-content ul li .minus,.choose-content ul li .add{
+  float: left;
+  width: 28px;
+  height: 28px;
+  background-color: #F9FAFB;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+}
+.choose-content ul li >span{
+  color: #FE5200;
+}
+.choose-footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 48px;
+  background-color: #F9FAFB;
+}
+.choose-footer .require{
+  color: #FE5200;
+  font-size: 14px;
+  align-self: center;
+}
+.total-price{
+  overflow: hidden;
+}
+.total-price >span{
+  display: block;
+  font-size: 14px;
+  color: #555555;
+  padding: 6px 0;
+}
+.total-price >span em{
+  font-style: initial;
+  text-decoration:line-through;
+}
+.total-price >span i{
+  font-style: initial;
+}
+.prices{
+  color: #EA4335 !important;
+}
+/**我的关注 我的粉丝**/
+.__Focus__Con{
+  background-color: transparent;
+  box-shadow: none;
+  padding: 10px 0;
+}
+.__Focus__Con .__All__List{
+  display: none;
+  overflow: hidden;
+  padding-bottom: 10px; 
+}
+.__Focus__Con .__All__List >span{
+  display: inline-block;
+  font-size: 14px;
+  color: #222222;
+}
+.__Focus__Con .__All__List ul li{
+  float: left;
+  /*width: calc(100% - 6px);*/
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(153,153,153,0.3);
+  padding: 30px 20px;
+  margin: 20px 3px 0 3px;
+}
+.__Focus__Con .__All__List ul li .__List__Left{
+  float: left;
+  display: flex;
+  justify-content: space-between;
+}
+.__List__Left .__List__Header{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.__List__Left .__List__Header img{
+  width: 100%;
+}
+.__List__Left .__List__Info{
+  overflow: hidden;
+  margin-left: 20px;
+}
+.__List__Left .__List__Info h3{
+  display: block;
+  font-size: 14px;
+  color: #222222;
+  font-weight: bold;
+}
+.__List__Left .__List__Info span{
+  display: block;
+  color: #999999;
+  font-size: 12px;
+  padding: 2px 0;
+}
+.__List__Left .__List__Info a{
+  display: block;
+  font-size: 14px;
+  color: #555555;
+  padding: 10px 0;
+}
+.__List__Left .__List__Info em{
+  font-style: initial;
+  font-weight: bold;
+}
+.__List__Left .__List__Info button{
+  padding: 6px 21px;
+  border: 1px solid #999999;
+  color: #999999;
+  font-size: 12px;
+  border-radius: 2px;
+  outline: none;
+}
+
+.__Focus__Con .__All__List ul li .__List__right{
+  float: right;
+}
+.__List__right a{
+  float: left;
+  width: 155px;
+  height: 113px;
+  overflow: hidden;
+  margin-left: 60px;
+}
+.__List__right a img{
+  width: 100%;
+}
+
+.__None__{
+  background-color: #2D8BFF;
+  border: 1px solid transparent !important;
+  color: #ffffff !important;
+}
+
+/**我的收藏**/
+.__Coll__Tabs{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 14px;
+  color: #222222;
+}
+.__Add__New{
+  color: #2D8BFF;
+  cursor: pointer;
+}
+.__Coll__Con{
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+.__Coll__Con .__All__List >span{
+  font-size: 14px;
+  color: #222222;
+}
+ul.__coll__list{
+  margin: 20px 3px;
+}
+ul.__coll__list li{
+  float: left;
+  width: 294px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(153,153,153,0.3);
+}
+ul.__coll__list li:nth-of-type(3n+1){
+  margin-left: 0;
+}
+ul.__coll__list li a{
+  overflow: hidden;
+}
+ul.__coll__list li .__Lists__{
+  width: 276px;
+  margin: 10px auto;
+  border-radius: 3px;
+  overflow: hidden;
+}
+ul.__coll__list li .__Lists__ >span{
+  float: left;
+  width: 138px;
+  height: 138px;
+  overflow: hidden;
+  position: relative;
+}
+.__Lists__ >span:first-child{
+  background-color: #FFE6E6;
+}
+.__Lists__ >span:first-child ~ span{
+  background-color: #F1EFFE;
+}
+.__Lists__ >span:first-child ~ span ~ span{
+  background-color: #FFE2B2;
+}
+.__Lists__ >span:first-child ~ span ~ span ~ span{
+  background-color: #EFFEF1;
+}
+.__Lists__ >span img{
+  width: 100%;
+}
+.__Lists__Inf{
+  padding: 0 16px 12px 16px;
+  border-bottom: 1px solid #ECECEC;
+}
+.__Lists__Inf h5{
+  display: block;
+  font-size: 14px;
+  color: #222222;
+  padding: 4px 0;
+}
+.__Lists__Inf p{
+  display: flex;
+  justify-content: space-between;
+}
+.__Lists__Inf p >span{
+  font-size: 12px;
+  color: #888888;
+}
+.__Lists__Inf p >span em{
+  font-style: initial;
+  margin-left: 4px;
+}
+.__Lists__Foot{
+  padding: 12px 16px;
+  font-size: 12px;
+  color: #888888;
+}
+.__Lists__Foot span{
+  display: inline-block;
+  margin-right: 8px;
+}
+.__Creat__Mask{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  display: none;
+}
+.__Creat__Folder{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 512px;
+  height: 404px;
+  margin-left: -256px;
+  margin-top: -187px; 
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+.__Creat__Header{
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid #F0F0F0;
+  font-size: 14px;
+  color: #555555;
+}
+.__Creat__Text{
+  overflow: hidden;
+  padding: 0 20px;
+}
+.__Creat__Text input{
+  display: block;
+  width: 100%;
+  border: 1px solid #CCCCCC;
+  height: 40px;
+  border-radius: 3px;
+  outline: none;
+  margin: 20px 0;
+  text-indent: 20px;
+}
+.__Creat__Text textarea{
+  display: block;
+  width: 100%;
+  border: 1px solid #CCCCCC;
+  height: 160px;
+  border-radius: 3px;
+  outline: none;
+  padding: 12px 0;
+  text-indent: 20px;
+}
+.__Creat__Text input::-webkit-input-placeholder, .__Creat__Text textarea::-webkit-input-placeholder {   
+  /* WebKit browsers */   
+  color: #AAAAAA;   
+}   
+.__Creat__Text input:-moz-placeholder, .__Creat__Text textarea:-moz-placeholder {   
+  /* Mozilla Firefox 4 to 18 */   
+  color: #AAAAAA;   
+}   
+.__Creat__Text input::-moz-placeholder, .__Creat__Text textarea::-moz-placeholder {   
+  /* Mozilla Firefox 19+ */   
+  color: #AAAAAA;   
+}   
+.__Creat__Text input:-ms-input-placeholder, .__Creat__Text textarea:-ms-input-placeholder {   
+  /* Internet Explorer 10+ */   
+  color: #AAAAAA;   
+}
+.__Creat__Footer{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.__Creat__Footer button{
+  display: inline-block;
+  padding: 10px 48px;
+  outline: none;
+  font-size: 13px;
+  color: #999999;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+}
+.__Creat__Footer .__Creat__Sure{
+  background-color: #2D8BFF;
+  margin-right: 20px;
+  color: #ffffff !important;
+  border-color: transparent;
+}
+.__Creat__Close{
+  cursor: pointer;
+}
+
+/**我的资料**/
+.__Info__Con{
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 40px;
+}
+.__Info__List{
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+}
+.__Info__List .__Name{
+  width: 70px;
+  text-align: right;
+  font-size: 14px;
+  margin-right: 30px;
+  color: #888888;
+  align-self: center;
+}
+.__Header__Images{
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 100%;
+  position: relative;
+}
+.__Header__Images img{
+  width: 100%;
+}
+.__Header__Images input{
+  display: none;
+}
+.__Header__Images:hover label{
+  display: block;
+}
+.__Header__Images label{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 90px;
+}
+.__Sex{
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+.__Sex input{
+  display: none;
+}
+.__Sex label{
+  display: inline-block;
+}
+.__Sex label i.fa{
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  font-size: 16px;
+  color: #999;
+}
+.yechecked{
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  opacity: 0;
+}
+.__Sex input:checked ~ label .yechecked{
+  transform: scale(1) !important;
+  -webkit-transform: scale(1) !important;
+  -moz-transform: scale(1) !important;
+  -ms-transform: scale(1) !important;
+  opacity: 1;
+  color: #3e93f7;
+}
+.__Sex input:checked ~ label .unchecked{
+  transform: scale(0) !important;
+  -webkit-transform: scale(0) !important;
+  -moz-transform: scale(0) !important;
+  -ms-transform: scale(0) !important;
+  opacity: 0;
+}
+.__Sex label span{
+  padding-left: 20px;
+  font-size: 13px;
+}
+.__Cont{
+  cursor: pointer;
+}
+.__Cont >span{
+  line-height: 20px;
+  font-size: 14px;
+  color: #424242;
+  padding-right: 20px;
+}
+.__Cont:hover a.__Chages__{
+  opacity: 1;
+  filter:alpha(opacity=100);
+}
+.__Cont a.__Chages__{
+  position: relative;
+  opacity: 0;
+  filter:alpha(opacity=0);
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  color: #3e93f7;
+}
+.__DropTit{
+  padding: 10px 26px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #424242;
+  border-radius: 3px;
+}
+.__Cont__Drop{
+  position: relative;
+}
+.__Cont__Drop.open .__Dropdown{
+  display: block !important;
+}
+.__Dropdown{
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+  border-radius: 3px;
+  left: 0;
+  background-color: #fff;
+  z-index: 9;
+  display: none;
+}
+.__Dropdown li{
+  display: block;
+  padding: 15px 10px;
+  font-size: 14px;
+}
+.__Dropdown li:hover{
+  background-color: #f2f2f2;
+}
+.__Cont input{
+  width: 400px;
+  height: 42px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  background-color: #f4f4f4;
+  text-indent: 20px;
+  font-size: 14px;
+  color: #424242;
+}
+.__Save__Info{
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+}
+.__Save__Btn{
+  display: inline-block;
+  padding: 20px 130px;
+  background-color: #3e93f7;
+  color: #fff;
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+}
+.__Edit__Component{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  display: none;
+}
+._Normal_{
+  background-color: #fff;
+  width: 300px;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  padding: 20px;
+}
+._Normal_ h5{
+  display: block;
+  font-size: 15px;
+  color: #424242;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.__Nickname{
+  display: none;
+}
+.__Nickname input{
+  display: block;
+  width: 100%;
+  height: 42px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  background-color: #f4f4f4;
+  text-indent: 20px;
+  font-size: 14px;
+  color: #424242;
+}
+._Normal_ .__Changes__Btn{
+  height: 42px;
+  width: 140px;
+  background-color: #3e93f7;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+}
+._Normal_ .__Cancle{
+  background-color: transparent;
+  border: 1px solid #dddddd;
+  color: #424242;
+  margin-left: 16px;
+}
+.__Tel_Number{
+  /*display: block;*/
+}
+.__Tel_Number .Pri__Tel,.Now__Tel{
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.__Tel_Number input,.__Passwords input{
+  display: block;
+  width: 100%;
+  height: 42px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  background-color: #f4f4f4;
+  text-indent: 20px;
+  font-size: 14px;
+  color: #424242;
+}
+.Now__Tel span{
+  display: inline-block;
+  float: left;
+  width: 60px;
+  height: 42px;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  background-color: #f4f4f4;
+  font-size: 14px;
+  text-align: center;
+  line-height: 42px;
+}
+.Now__Tel input{
+  float: right;
+  width: 220px;
+}
+.__Codes input{
+  float: left;
+  width: 180px;
+}
+.__Codes button{
+  float: right;
+  width: 100px;
+  height: 42px;
+  background-color: #3e93f7;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #fff;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+.__Passwords .Pri__Psw{
+  margin-bottom: 20px;
+}
+/**消费记录**/
+.__Record__List{
+  overflow: hidden;
+  margin: 20px 0;
+  border: 1px solid #F0F0F0;
+  box-sizing: border-box;
+}
+.__Record__List >h5{
+  display: block;
+  padding: 12px 0;
+  background-color: #E6F1FF;
+  overflow: hidden;
+}
+.__Kb__Buy .__Record__List >h5 span{
+  float: left;
+  width: 13%;
+  text-align: center;
+  font-size: 14px;
+  color: #222222;
+}
+.__Kb__Buy .__Record__List >h5 span:first-child{
+  width: 22%;
+}
+ul.__Record__Common{
+  overflow: hidden;
+}
+ul.__Record__Common li{
+  float: left;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 12px;
+  color: #222222;
+  text-align: center;
+  border-bottom: 1px solid #F0F0F0;
+}
+ul.__Record__Common li:last-child{
+  border-bottom: none;
+}
+.__Kb__Buy ul.__Record__Common li span{
+  float: left;
+  width: 13%;
+}
+.__Kb__Buy ul.__Record__Common li span:first-child{
+  width: 22%;
+}
+._Red{
+  color: #ff6d6d;
+}
+.__Ji__Buy .__Record__List >h5 span{
+  float: left;
+  width: 16%;
+  text-align: center;
+  font-size: 14px;
+  color: #222222;
+}
+.__Ji__Buy .__Record__List >h5 span:first-child{
+  width: 20%;
+}
+.__Ji__Buy ul.__Record__Common li span{
+  float: left;
+  width: 16%;
+}
+.__Ji__Buy ul.__Record__Common li span:first-child{
+  width: 20%;
+}
+.__Member__Buy .__Record__List >h5 span{
+  float: left;
+  width: 25%;
+  text-align: center;
+  font-size: 14px;
+  color: #222222;
+}
+.__Member__Buy ul.__Record__Common li span{
+  float: left;
+  width: 25%;
+}
+

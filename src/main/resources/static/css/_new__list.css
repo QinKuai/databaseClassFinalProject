@@ -1,0 +1,193 @@
+.__New__Lists{
+	overflow: hidden;
+	margin-top: 70px;
+}
+.__New__Lists__Tag{
+	background-color: #ffffff;
+	padding: 30px 0;
+}
+.__New__Lists__Tag .__Common__Classify__{
+	overflow: hidden;
+	width: 1160px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	display: flex;
+}
+.__New__Lists__Tag .__Common__Classify__ h3{
+	display: flex;
+	align-self: start;
+	padding-top: 8px;
+    width: 50px;
+    font-size: 14px;
+    color: #222222;
+    font-weight: bold;
+}
+.__New__Lists__Tag .__Common__Classify__{
+	overflow: hidden;
+	height: 36px;
+}
+.__New__Lists__Tag .__Common__Classify__ ul{
+	display: inline-table;
+    width: calc(100% - 160px);
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+.__New__Lists__Tag .__Common__Classify__ ul li{
+	display: inline-block;
+	margin-left: 41px;
+	font-size: 14px;
+	color: #222222;
+	cursor: pointer;
+	font-weight: 400;
+}
+.__Common__Classify__ ul li >span{
+	display: inline-block;
+	padding: 7px 0;
+}
+.__Common__Classify__ ul li.__State__active{
+	color: #0767DD;
+}
+.__Common__Classify__ ul li i.fa-check-square-o{
+	display: none;
+}
+.__Common__Classify__ ul li.checked{
+	color: #0767DD;
+}
+.__Common__Classify__ ul li i.fa{
+	transition: all .3s ease-in-out;
+	width: 16px;
+}
+.__Common__Classify__ ul li.checked i.fa-check-square-o{
+	display: inline-block;
+}
+.__Common__Classify__ ul li.checked i.fa-square-o{
+	display: none;
+}
+.more-btn{
+	float: right;
+	width: 100px;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 7px;
+	cursor: pointer;
+	color: #2d93f7;
+}
+.more-btn i.fa-angle-up{
+	display: none;
+}
+.more-classify {
+	height: auto !important;
+}
+.more-classify .more-btn i.fa-angle-up{
+	display: inline-block;
+}
+.more-classify .more-btn i.fa-angle-down{
+	display: none;
+}
+
+.__Common__Tags__{
+	width: 1160px;
+	background-color: #EFF5FF;
+	margin: 0 auto;
+}
+.__Common__Tags__ .__Common__{
+	display: inline-block;
+	padding: 15px 0;
+	margin-left: 130px;
+}
+.__Common__Tags__ .__Common__ h3{
+	display: inline-block;
+	width: 50px;
+	font-size: 14px;
+}
+.__Common__Tags__ .__Common__ ul{
+	display: inline-block;
+}
+.__Common__Tags__ .__Common__ ul li{
+	display: inline-block;
+	color: #888888;
+	font-size: 14px;
+	margin-left: 40px;
+	cursor: pointer;
+}
+.__Common__Tags__ .__Common__ ul li.__State__active{
+	color: #0767DD;
+}
+
+
+
+.__New__Lists__List{
+	width: 1160px;
+    margin: 0 auto;
+	overflow: hidden;
+}
+
+.__Info_Small{
+	font-size: 12px;
+	color: #888888;
+}
+
+.__Info_Tools{
+	display: flex;
+	justify-content: space-between;
+	padding: 14px 0;
+}
+.__Info_Tools .__Tools{
+	font-size: 12px;
+	color: #888888;
+}
+.__Info_Tools .__Tools span{
+	margin-left: 6px;
+}
+
+.__List__Footer{
+	display: block;
+	padding: 14px 12px;
+	overflow: hidden;
+}
+.__List__Footer >a{
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+}
+.__List__Footer .__Header__Images{
+	float: left;
+	width: 35px;
+	height: 35px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.__List__Footer .__Header__Images img{
+	width: 100%;
+}
+.is_not_vip{
+	display: none;
+}
+.__Header__Name{
+	float: left;
+	font-size: 14px;
+	color: #222222;
+	line-height: 35px;
+	margin-left: 6px;
+}
+
+.__Focus{
+	float: right;
+	border-radius: 3px;
+	border: 1px solid #0190FE;
+	padding: 2px 10px;
+	margin-top: 6px;
+	font-size: 12px;
+	color: #0190FE;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+

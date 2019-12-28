@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="databaseclass.finalproject.dao.UserDownloadMapper">
+  <resultMap id="BaseResultMap" type="databaseclass.finalproject.entity.UserDownload">
+    <id column="d_id" jdbcType="INTEGER" property="dId" />
+    <result column="user_download" jdbcType="VARCHAR" property="username" />
+    <result column="resourceid" jdbcType="INTEGER" property="resourceid" />
+    <result column="d_date" jdbcType="DATE" property="dDate" />
+    <result column="d_point" jdbcType="INTEGER" property="dPoint" />
+    <result column="user_upload" jdbcType="VARCHAR" property="userUpload" />
+  </resultMap>
+  
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from user_download
+    where d_id = #{dId,jdbcType=INTEGER}
+  </delete>
+  
+  <insert id="insert" parameterType="databaseclass.finalproject.entity.UserDownload">
+    insert into user_download (user_download, resourceid, d_date, 
+      d_point, user_upload)
+    values (#{username,jdbcType=VARCHAR}, #{resourceid,jdbcType=INTEGER}, #{dDate,jdbcType=DATE}, 
+      #{dPoint,jdbcType=INTEGER}, #{userUpload,jdbcType=VARCHAR})
+  </insert>
+  
+  <update id="updateByPrimaryKey" parameterType="databaseclass.finalproject.entity.UserDownload">
+    update user_download
+    set user_download = #{username,jdbcType=VARCHAR},
+      resourceid = #{resourceid,jdbcType=INTEGER},
+      d_date = #{dDate,jdbcType=DATE},
+      d_point = #{dPoint,jdbcType=INTEGER},
+      user_upload = #{userUpload,jdbcType=VARCHAR}
+    where d_id = #{dId,jdbcType=INTEGER}
+  </update>
+  
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select d_id, user_download, resourceid, d_date, d_point, user_upload
+    from user_download
+    where d_id = #{dId,jdbcType=INTEGER}
+  </select>
+  
+  <select id="selectAll" resultMap="BaseResultMap">
+    select d_id, user_download, resourceid, d_date, d_point, user_upload
+    from user_download
+  </select>
+  
+  <select id="selectByUsernameAndResourceid" parameterType="map" resultType="databaseclass.finalproject.entity.UserDownload">
+  	select * from user_download
+  	where user_download=#{username, jdbcType=VARCHAR}
+  	and resourceid=#{resourceid, jdbcType=INTEGER}
+  </select>
+  
+  <select id="selectDownloadByUsername" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	select * from user_download
+  	where user_download=#{username, jdbcType=VARCHAR}
+  	order by d_date desc
+  </select>
+  
+  <select id="selectDownloadedByUsername" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	select * from user_download
+  	where user_upload=#{username, jdbcType=VARCHAR}
+  	order by d_date desc
+  </select>
+</mapper>

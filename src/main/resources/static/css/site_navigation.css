@@ -1,0 +1,164 @@
+body{
+  background-color: #fff;
+}
+.__Nav__Container__{
+  position: relative;
+	overflow: hidden;
+    width: 1160px;
+    margin: 70px auto 0 auto;
+}
+.__Nav__Tabs{
+  width: 1160px;
+  border-radius: 3px;
+  padding-top: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f5f5f5;
+}
+.__Nav__Tabs ul{
+  overflow: hidden;
+}
+.__Nav__Tabs >ul li{
+  float: left;
+  padding: 20px 10px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  transition: all .3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+.__Nav__Tabs >ul li a{
+  display: block;
+  font-size: 18px;
+  color: #7f7f7f;
+  transition: all .5s ease-in-out;
+}
+span.__Lines__{
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background-color: #45B6F7;
+  transition: all .6s linear;
+  -webkit-transition: all .6s linear;
+  -moz-transition: all .6s linear;
+}
+.__Nav__Tabs >ul li.__Active__ .__Lines__{
+  width: 100%;
+}
+.__Nav__Tabs >ul li.__Active__ >a{
+  color: #45B6F7;
+}
+.__Nav__Tabs ul li:hover{
+  background-color: #f9f9f9;
+}
+.__Fixed{
+    position:fixed;
+    top:70px;
+    margin-top: 0;
+}
+.__Tabs__Cont{
+  width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+.__Nav__Info__{
+	overflow: hidden;
+  padding-top: 40px;
+}
+.__Nav__Info__ >h5{
+  font-size: 18px;
+  display: block;
+  padding: 15px 18px;
+  color: #575757;
+  letter-spacing: 1px;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  font-weight: 400;
+}
+.__Nav__Info__ >ul{
+	overflow: hidden;
+}
+.__Nav__Info__ >ul li{
+	float: left;
+	width: 232px;
+}
+.__Nav__Info__ >ul li a{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	margin: 20px;
+	padding: 20px;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+	border-radius: 2px;
+	width: 152px;
+}
+.__Images__{
+	width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+.__Images__ img{
+	width: 100%;
+}
+.__Lern__{
+	max-width: 117px;
+	margin-left: 5px;
+}
+.__Nav__Info__ >ul li a span{
+	display: block;
+	font-size: 12px;
+	color: #a5a4a4;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.__Nav__Info__ >ul li a span:first-child{
+	font-size: 14px;
+  font-weight: bold;
+  color: #45B6F7;
+	padding-bottom: 6px;
+}
+.share-list .share-container{
+  overflow: inherit;
+}
+.share-container li{
+  position: relative;
+  float: left;
+  width: 23px;
+  height: 23px;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+.share-container li a{
+  display: inline-block;
+  width: 100%;
+  height: 23px;
+}
+.share-container li a img{
+  width: 100%;
+}
+.wechat-share{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+  z-index: 9;
+}
+.bds_weixin:hover ~ .wechat-share{
+  display: block;
+}
+.wechat-share img{
+  width: 100%;
+}
+
+
+
+

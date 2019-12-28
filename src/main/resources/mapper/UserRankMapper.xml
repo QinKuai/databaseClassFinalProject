@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="databaseclass.finalproject.dao.UserRankMapper">
+  <resultMap id="BaseResultMap" type="databaseclass.finalproject.entity.UserRank">
+    <id column="u_rank" jdbcType="SMALLINT" property="uRank" />
+    <result column="search" jdbcType="INTEGER" property="search" />
+    <result column="seeurl" jdbcType="INTEGER" property="seeurl" />
+    <result column="upload" jdbcType="INTEGER" property="upload" />
+    <result column="post" jdbcType="INTEGER" property="post" />
+    <result column="u_comment" jdbcType="INTEGER" property="uComment" />
+    <result column="newfield" jdbcType="INTEGER" property="newfield" />
+    <result column="up_exp" jdbcType="INTEGER" property="upExp" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short">
+    delete from user_rank
+    where u_rank = #{uRank,jdbcType=SMALLINT}
+  </delete>
+  <insert id="insert" parameterType="databaseclass.finalproject.entity.UserRank">
+    insert into user_rank (`search`, seeurl, upload, 
+      post, u_comment, newfield, 
+      up_exp)
+    values (#{search,jdbcType=INTEGER}, #{seeurl,jdbcType=INTEGER}, #{upload,jdbcType=INTEGER}, 
+      #{post,jdbcType=INTEGER}, #{uComment,jdbcType=INTEGER}, #{newfield,jdbcType=INTEGER}, 
+      #{upExp,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="databaseclass.finalproject.entity.UserRank">
+    update user_rank
+    set `search` = #{search,jdbcType=INTEGER},
+      seeurl = #{seeurl,jdbcType=INTEGER},
+      upload = #{upload,jdbcType=INTEGER},
+      post = #{post,jdbcType=INTEGER},
+      u_comment = #{uComment,jdbcType=INTEGER},
+      newfield = #{newfield,jdbcType=INTEGER},
+      up_exp = #{upExp,jdbcType=INTEGER}
+    where u_rank = #{uRank,jdbcType=SMALLINT}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    select u_rank, `search`, seeurl, upload, post, u_comment, newfield, up_exp
+    from user_rank
+    where u_rank = #{uRank,jdbcType=SMALLINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select u_rank, `search`, seeurl, upload, post, u_comment, newfield, up_exp
+    from user_rank
+  </select>
+  
+  <select id="selectAllExp" resultMap="BaseResultMap">
+  	select u_rank, up_exp from user_rank;
+  </select>
+</mapper>
