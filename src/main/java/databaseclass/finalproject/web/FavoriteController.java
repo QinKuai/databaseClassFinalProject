@@ -78,7 +78,7 @@ public class FavoriteController {
 	@RequestMapping(value = "/is-favorited")
 	public String isFavorited(String username, Integer resourceid) {
 		JSONObject json = new JSONObject();
-		json.put("favorite", "");
+		json.put("favorite", null);
 		User user = userDao.selectByUsername(username);
 		if (user == null) {
 			json.put(ResponseCode.KEY, ResponseCode.USER_NOT_EXIST);

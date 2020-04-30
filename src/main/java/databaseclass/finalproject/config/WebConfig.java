@@ -77,7 +77,7 @@ public class WebConfig implements WebMvcConfigurer{
 	public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
 		StringHttpMessageConverter httpMessageConverter = new StringHttpMessageConverter(Charset.forName("utf-8"));
 		converters.add(httpMessageConverter);
-		WebMvcConfigurer.super.configureMessageConverters(converters);
+		//WebMvcConfigurer.super.configureMessageConverters(converters);
 	}
 	
 	/**
@@ -91,7 +91,7 @@ public class WebConfig implements WebMvcConfigurer{
 		registry.addResourceHandler("/static/image/**").addResourceLocations("classpath:/static/image/");
 		registry.addResourceHandler("/static/luntanres/**").addResourceLocations("classpath:/static/luntanres/");
 		registry.addResourceHandler("/static/images/**").addResourceLocations("classpath:/static/images/");
-		WebMvcConfigurer.super.addResourceHandlers(registry);
+		//WebMvcConfigurer.super.addResourceHandlers(registry);
 	}
 	
 	

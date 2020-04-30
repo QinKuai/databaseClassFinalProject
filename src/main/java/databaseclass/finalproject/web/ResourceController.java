@@ -322,6 +322,8 @@ public class ResourceController {
 			json.put(ResponseCode.KEY, ResponseCode.ERROR);
 			return json.toJSONString();
 		}
+		System.out.println(user);
+		
 		// 获取资源信息
 		Resource resource = resourceDao.selectByPrimaryKey(userDownload.getResourceid());
 		if (resource == null) {
@@ -342,8 +344,11 @@ public class ResourceController {
 		// 设置资源所有者
 		userDownload.setUserUpload(resource.getUsername());
 		// 设置扣除积分数
-		userDownload.setdPoint((user.getuType() == UserType.NORMAL) ? resource.getPoint() : resource.getPoint() * 4 / 5);
+		int point = user.getuType().equals(UserType.NORMAL) ? resource.getPoint() : resource.getPoint() * 4 / 5;
+		userDownload.setdPoint(point);
+		System.out.println(point);
 		// 插入下载记录表中
+		System.out.println(userDownload);
 		try {
 			downloadDao.insert(userDownload);
 		} catch (Exception e) {
